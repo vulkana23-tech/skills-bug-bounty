@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "8.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools)",
+  "version": "9.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -58,6 +58,11 @@
     { "path": "./skills/bug-bounty-visual-recon" },
     { "path": "./skills/bug-bounty-secret-leak-detection" },
     { "path": "./skills/bug-bounty-cloud-s3-audit" },
-    { "path": "./skills/bug-bounty-web-fuzzing" }
+    { "path": "./skills/bug-bounty-web-fuzzing" },
+    { "path": "./skills/bug-bounty-nuclei-template-authoring" },
+    { "path": "./skills/bug-bounty-cve-fast-scanning" },
+    { "path": "./skills/bug-bounty-misconfig-detection" },
+    { "path": "./skills/bug-bounty-exposed-panels-detection" },
+    { "path": "./skills/bug-bounty-custom-protocol-scans" }
   ]
 }

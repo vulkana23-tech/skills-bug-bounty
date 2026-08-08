@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **55 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025` y `hackThacker/Bug-Bounty-Tools`).
+Colección completa y estructurada de **60 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools` y `projectdiscovery/nuclei-templates`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **55 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 55 skills para importación automática
+├── skills.json                         # Registro de 60 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -65,7 +65,12 @@ bug-bounty-skills/
     ├── bug-bounty-visual-recon/        # Reconocimiento Visual & Screenshots (Gowitness/Aquatone)
     ├── bug-bounty-secret-leak-detection/# Detección de Secretos Expuestos (Trufflehog/Gitleaks)
     ├── bug-bounty-cloud-s3-audit/      # Auditoría & Descubrimiento de Storage Buckets S3
-    └── bug-bounty-web-fuzzing/         # Fuzzing Web Estratégico & SecLists (FFUF/Wfuzz)
+    ├── bug-bounty-web-fuzzing/         # Fuzzing Web Estratégico & SecLists (FFUF/Wfuzz)
+    ├── bug-bounty-nuclei-template-authoring/# Creación de Plantillas Declarativas YAML de Nuclei
+    ├── bug-bounty-cve-fast-scanning/   # Escaneo Rápido de CVEs de Alta Severidad con Nuclei
+    ├── bug-bounty-misconfig-detection/ # Detección Automatizada de Malas Configuraciones de Servidor
+    ├── bug-bounty-exposed-panels-detection/# Descubrimiento & Fingerprinting de Paneles Expuestos
+    └── bug-bounty-custom-protocol-scans/# Escaneo de Protocolos No-Web (TCP/DNS/SSL/Network)
 ```
 
 ---
@@ -99,7 +104,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (55 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (60 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -158,6 +163,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-secret-leak-detection` | Detección de secretos expuestos en repositorios y JS (Trufflehog/Gitleaks) |
 | `bug-bounty-cloud-s3-audit` | Auditoría y descubrimiento especializado de buckets de almacenamiento S3 |
 | `bug-bounty-web-fuzzing` | Estrategia de fuzzing web estructurado con FFUF/Wfuzz y SecLists |
+| `bug-bounty-nuclei-template-authoring` | Creación y diseño de plantillas declarativas YAML para Nuclei |
+| `bug-bounty-cve-fast-scanning` | Escaneo rápido de CVEs de alta severidad con filtros Nuclei |
+| `bug-bounty-misconfig-detection` | Detección automatizada de malas configuraciones de servidor con Nuclei |
+| `bug-bounty-exposed-panels-detection` | Descubrimiento e identificación de paneles de administración expuestos |
+| `bug-bounty-custom-protocol-scans` | Escaneo de protocolos no-web (TCP, DNS, SSL, Network) con Nuclei |
 
 ---
 
@@ -173,3 +183,4 @@ Basado en los repositorios de ciberseguridad:
 - `The-Art-of-Hacking/h4cker`
 - `Bug-Bounty-Hunting-Methodology-2025`
 - `hackThacker/Bug-Bounty-Tools`
+- `projectdiscovery/nuclei-templates`
