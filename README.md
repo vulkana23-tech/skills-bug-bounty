@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **35 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet` y `vitalysim/Awesome-Hacking-Resources`).
+Colección completa y estructurada de **40 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources` y `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **35 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 35 skills para importación automática
+├── skills.json                         # Registro de 40 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -45,7 +45,12 @@ bug-bounty-skills/
     ├── bug-bounty-osint-threat-intel/  # OSINT, Secretos Expuestos & Threat Intelligence
     ├── bug-bounty-mobile-assessment/   # Seguridad Móvil (Android & iOS, OWASP Mobile Top 10)
     ├── bug-bounty-reverse-engineering/ # Ingeniería Inversa & Auditoría de Binarios
-    └── bug-bounty-privilege-escalation/# Escalación de Privilegios (Linux & Windows)
+    ├── bug-bounty-privilege-escalation/# Escalación de Privilegios (Linux & Windows)
+    ├── bug-bounty-target-selection/    # Selección de Objetivos, Alcance & VDP vs Bounties
+    ├── bug-bounty-methodology-playbook/# Playbook Sistemático de Auditoría & Flujo de Trabajo
+    ├── bug-bounty-vulnerability-disclosure/# Divulgación Responsable, Safe Harbor & Triage
+    ├── bug-bounty-environment-setup/  # Configuración de Entorno, Proxies & Extensiones
+    └── bug-bounty-information-disclosure/# Auditoría de Fuga de Información & Archivos Backup
 ```
 
 ---
@@ -79,7 +84,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (35 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (40 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -118,6 +123,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-mobile-assessment` | Auditoría de aplicaciones móviles (Android & iOS, OWASP Mobile Top 10) |
 | `bug-bounty-reverse-engineering` | Ingeniería Inversa, descompilación de binarios y protecciones del compilador |
 | `bug-bounty-privilege-escalation` | Escalación de privilegios en sistemas operativos Linux (SUID/SUDO) y Windows |
+| `bug-bounty-target-selection` | Selección estratégica de objetivos, reglas de compromiso y análisis de alcance |
+| `bug-bounty-methodology-playbook` | Playbook sistemático de pruebas, mapeo de funciones y hábitos de auditoría |
+| `bug-bounty-vulnerability-disclosure` | Divulgación responsable de vulnerabilidades, Safe Harbor y comunicación profesional |
+| `bug-bounty-environment-setup` | Configuración de entorno de auditoría, proxies (Burp/ZAP) y extensiones |
+| `bug-bounty-information-disclosure` | Auditoría de fuga de información sensible, stack traces y archivos de respaldo |
 
 ---
 
@@ -129,3 +139,4 @@ Basado en los repositorios de ciberseguridad:
 - `swisskyrepo/PayloadsAllTheThings`
 - `EdOverflow/bugbounty-cheatsheet`
 - `vitalysim/Awesome-Hacking-Resources`
+- `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`
