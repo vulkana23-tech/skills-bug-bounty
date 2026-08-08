@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "7.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025)",
+  "version": "8.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -53,6 +53,11 @@
     { "path": "./skills/bug-bounty-port-service-discovery" },
     { "path": "./skills/bug-bounty-parameter-mining" },
     { "path": "./skills/bug-bounty-business-logic-2025" },
-    { "path": "./skills/bug-bounty-automation-scripts" }
+    { "path": "./skills/bug-bounty-automation-scripts" },
+    { "path": "./skills/bug-bounty-cms-assessment" },
+    { "path": "./skills/bug-bounty-visual-recon" },
+    { "path": "./skills/bug-bounty-secret-leak-detection" },
+    { "path": "./skills/bug-bounty-cloud-s3-audit" },
+    { "path": "./skills/bug-bounty-web-fuzzing" }
   ]
 }

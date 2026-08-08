@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **50 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker` y `Bug-Bounty-Hunting-Methodology-2025`).
+Colección completa y estructurada de **55 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025` y `hackThacker/Bug-Bounty-Tools`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **50 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 50 skills para importación automática
+├── skills.json                         # Registro de 55 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -60,7 +60,12 @@ bug-bounty-skills/
     ├── bug-bounty-port-service-discovery/# Descubrimiento Eficiente de Puertos & Servicios No-Web
     ├── bug-bounty-parameter-mining/    # Parameter Mining & Extracción de Endpoints JS
     ├── bug-bounty-business-logic-2025/ # Explotación Avanzada de Lógica de Negocio 2025
-    └── bug-bounty-automation-scripts/  # Custom Scripts & Automatización de Auditoría
+    ├── bug-bounty-automation-scripts/  # Custom Scripts & Automatización de Auditoría
+    ├── bug-bounty-cms-assessment/      # Auditoría de Vulnerabilidades en CMS (WP, Drupal, Joomla)
+    ├── bug-bounty-visual-recon/        # Reconocimiento Visual & Screenshots (Gowitness/Aquatone)
+    ├── bug-bounty-secret-leak-detection/# Detección de Secretos Expuestos (Trufflehog/Gitleaks)
+    ├── bug-bounty-cloud-s3-audit/      # Auditoría & Descubrimiento de Storage Buckets S3
+    └── bug-bounty-web-fuzzing/         # Fuzzing Web Estratégico & SecLists (FFUF/Wfuzz)
 ```
 
 ---
@@ -94,7 +99,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (50 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (55 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -148,6 +153,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-parameter-mining` | Parameter Mining (Arjun/x8) y extracción de endpoints en JS |
 | `bug-bounty-business-logic-2025` | Explotación avanzada de lógica de negocio 2025 (API sync & Payment flows) |
 | `bug-bounty-automation-scripts` | Desarrollo de scripts de automatización custom y canalizaciones bash/python |
+| `bug-bounty-cms-assessment` | Auditoría de vulnerabilidades en CMS (WordPress, Drupal, Joomla, Magento) |
+| `bug-bounty-visual-recon` | Reconocimiento visual y captura automatizada de pantallas (Gowitness/Aquatone) |
+| `bug-bounty-secret-leak-detection` | Detección de secretos expuestos en repositorios y JS (Trufflehog/Gitleaks) |
+| `bug-bounty-cloud-s3-audit` | Auditoría y descubrimiento especializado de buckets de almacenamiento S3 |
+| `bug-bounty-web-fuzzing` | Estrategia de fuzzing web estructurado con FFUF/Wfuzz y SecLists |
 
 ---
 
@@ -162,3 +172,4 @@ Basado en los repositorios de ciberseguridad:
 - `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`
 - `The-Art-of-Hacking/h4cker`
 - `Bug-Bounty-Hunting-Methodology-2025`
+- `hackThacker/Bug-Bounty-Tools`
