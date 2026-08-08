@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "bug-bounty-skills",
+  "version": "1.2.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings)",
+  "entries": [
+    { "path": "./skills/bug-bounty-recon" },
+    { "path": "./skills/bug-bounty-xss" },
+    { "path": "./skills/bug-bounty-sqli" },
+    { "path": "./skills/bug-bounty-ssrf" },
+    { "path": "./skills/bug-bounty-idor" },
+    { "path": "./skills/bug-bounty-oauth-token" },
+    { "path": "./skills/bug-bounty-rce-deserial" },
+    { "path": "./skills/bug-bounty-csrf-logic" },
+    { "path": "./skills/bug-bounty-reporting" },
+    { "path": "./skills/bug-bounty-xxe" },
+    { "path": "./skills/bug-bounty-open-redirect" },
+    { "path": "./skills/bug-bounty-graphql" },
+    { "path": "./skills/bug-bounty-subdomain-takeover" },
+    { "path": "./skills/bug-bounty-account-takeover" },
+    { "path": "./skills/bug-bounty-ssti" },
+    { "path": "./skills/bug-bounty-lfi-rfi" },
+    { "path": "./skills/bug-bounty-jwt-security" },
+    { "path": "./skills/bug-bounty-file-upload" },
+    { "path": "./skills/bug-bounty-cve-exploits" }
+  ]
+}
