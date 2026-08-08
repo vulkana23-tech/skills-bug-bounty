@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **40 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources` y `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`).
+Colección completa y estructurada de **45 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters` y `The-Art-of-Hacking/h4cker`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **40 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 40 skills para importación automática
+├── skills.json                         # Registro de 45 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -50,7 +50,12 @@ bug-bounty-skills/
     ├── bug-bounty-methodology-playbook/# Playbook Sistemático de Auditoría & Flujo de Trabajo
     ├── bug-bounty-vulnerability-disclosure/# Divulgación Responsable, Safe Harbor & Triage
     ├── bug-bounty-environment-setup/  # Configuración de Entorno, Proxies & Extensiones
-    └── bug-bounty-information-disclosure/# Auditoría de Fuga de Información & Archivos Backup
+    ├── bug-bounty-information-disclosure/# Auditoría de Fuga de Información & Archivos Backup
+    ├── bug-bounty-dfir-incident-response/# DFIR, Análisis de Logs de Servidor & Triaje Forense
+    ├── bug-bounty-cloud-security-audit/# Auditoría Cloud (AWS, Azure, GCP) & Políticas IAM
+    ├── bug-bounty-container-k8s-security/# Seguridad en Contenedores (Docker & Kubernetes RBAC)
+    ├── bug-bounty-threat-hunting/      # Caza de Amenazas (SIGMA & YARA Detection Rules)
+    └── bug-bounty-api-security-top10/  # OWASP API Security Top 10 & API Hardening
 ```
 
 ---
@@ -84,7 +89,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (40 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (45 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -128,6 +133,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-vulnerability-disclosure` | Divulgación responsable de vulnerabilidades, Safe Harbor y comunicación profesional |
 | `bug-bounty-environment-setup` | Configuración de entorno de auditoría, proxies (Burp/ZAP) y extensiones |
 | `bug-bounty-information-disclosure` | Auditoría de fuga de información sensible, stack traces y archivos de respaldo |
+| `bug-bounty-dfir-incident-response` | DFIR, análisis de logs de servidor web (Apache, Nginx, IIS) y triaje forense |
+| `bug-bounty-cloud-security-audit` | Auditoría de infraestructura en la nube (AWS, Azure, GCP) y políticas IAM |
+| `bug-bounty-container-k8s-security` | Seguridad en contenedores Docker y orquestación con Kubernetes RBAC |
+| `bug-bounty-threat-hunting` | Caza de amenazas y desarrollo de reglas de detección SIGMA y YARA |
+| `bug-bounty-api-security-top10` | Metodología de auditoría OWASP API Security Top 10 y hardening de APIs |
 
 ---
 
@@ -140,3 +150,4 @@ Basado en los repositorios de ciberseguridad:
 - `EdOverflow/bugbounty-cheatsheet`
 - `vitalysim/Awesome-Hacking-Resources`
 - `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`
+- `The-Art-of-Hacking/h4cker`

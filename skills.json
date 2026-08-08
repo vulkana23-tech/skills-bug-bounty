@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "5.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources)",
+  "version": "6.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -43,6 +43,11 @@
     { "path": "./skills/bug-bounty-methodology-playbook" },
     { "path": "./skills/bug-bounty-vulnerability-disclosure" },
     { "path": "./skills/bug-bounty-environment-setup" },
-    { "path": "./skills/bug-bounty-information-disclosure" }
+    { "path": "./skills/bug-bounty-information-disclosure" },
+    { "path": "./skills/bug-bounty-dfir-incident-response" },
+    { "path": "./skills/bug-bounty-cloud-security-audit" },
+    { "path": "./skills/bug-bounty-container-k8s-security" },
+    { "path": "./skills/bug-bounty-threat-hunting" },
+    { "path": "./skills/bug-bounty-api-security-top10" }
   ]
 }
