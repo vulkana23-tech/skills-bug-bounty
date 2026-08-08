@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **30 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings` y `EdOverflow/bugbounty-cheatsheet`).
+Colección completa y estructurada de **35 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet` y `vitalysim/Awesome-Hacking-Resources`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **30 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 30 skills para importación automática
+├── skills.json                         # Registro de 35 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -40,7 +40,12 @@ bug-bounty-skills/
     ├── bug-bounty-csv-injection/       # CSV / Formula Injection & DDE Execution
     ├── bug-bounty-xslt-injection/      # XSLT Injection & XML Document Reading
     ├── bug-bounty-command-injection/   # OS Command Injection & Filter Bypasses
-    └── bug-bounty-content-injection/   # Content Injection & Text Spoofing
+    ├── bug-bounty-content-injection/   # Content Injection & Text Spoofing
+    ├── bug-bounty-ai-redteaming/       # AI & LLM Security (Prompt Injection, OWASP Top 10 for LLMs)
+    ├── bug-bounty-osint-threat-intel/  # OSINT, Secretos Expuestos & Threat Intelligence
+    ├── bug-bounty-mobile-assessment/   # Seguridad Móvil (Android & iOS, OWASP Mobile Top 10)
+    ├── bug-bounty-reverse-engineering/ # Ingeniería Inversa & Auditoría de Binarios
+    └── bug-bounty-privilege-escalation/# Escalación de Privilegios (Linux & Windows)
 ```
 
 ---
@@ -74,7 +79,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (30 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (35 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -108,6 +113,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-xslt-injection` | XSLT Injection, lectura de documentos XML locales y RCE en procesadores |
 | `bug-bounty-command-injection` | Inyección de comandos OS, bypass de espacios y blind exfiltration |
 | `bug-bounty-content-injection` | Content Spoofing, Text Injection y alteración de UI |
+| `bug-bounty-ai-redteaming` | AI & LLM Security Assessment, Prompt Injection y OWASP Top 10 for LLMs |
+| `bug-bounty-osint-threat-intel` | OSINT pasivo, investigación de credenciales expuestas y Threat Intelligence |
+| `bug-bounty-mobile-assessment` | Auditoría de aplicaciones móviles (Android & iOS, OWASP Mobile Top 10) |
+| `bug-bounty-reverse-engineering` | Ingeniería Inversa, descompilación de binarios y protecciones del compilador |
+| `bug-bounty-privilege-escalation` | Escalación de privilegios en sistemas operativos Linux (SUID/SUDO) y Windows |
 
 ---
 
@@ -118,3 +128,4 @@ Basado en los repositorios de ciberseguridad:
 - `reddelexc/hackerone-reports`
 - `swisskyrepo/PayloadsAllTheThings`
 - `EdOverflow/bugbounty-cheatsheet`
+- `vitalysim/Awesome-Hacking-Resources`

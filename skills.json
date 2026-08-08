@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "3.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet)",
+  "version": "4.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -33,6 +33,11 @@
     { "path": "./skills/bug-bounty-csv-injection" },
     { "path": "./skills/bug-bounty-xslt-injection" },
     { "path": "./skills/bug-bounty-command-injection" },
-    { "path": "./skills/bug-bounty-content-injection" }
+    { "path": "./skills/bug-bounty-content-injection" },
+    { "path": "./skills/bug-bounty-ai-redteaming" },
+    { "path": "./skills/bug-bounty-osint-threat-intel" },
+    { "path": "./skills/bug-bounty-mobile-assessment" },
+    { "path": "./skills/bug-bounty-reverse-engineering" },
+    { "path": "./skills/bug-bounty-privilege-escalation" }
   ]
 }
