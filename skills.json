@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "9.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates)",
+  "version": "10.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -63,6 +63,11 @@
     { "path": "./skills/bug-bounty-cve-fast-scanning" },
     { "path": "./skills/bug-bounty-misconfig-detection" },
     { "path": "./skills/bug-bounty-exposed-panels-detection" },
-    { "path": "./skills/bug-bounty-custom-protocol-scans" }
+    { "path": "./skills/bug-bounty-custom-protocol-scans" },
+    { "path": "./skills/bug-bounty-subdomain-osint-enum" },
+    { "path": "./skills/bug-bounty-reverse-dns-mapping" },
+    { "path": "./skills/bug-bounty-search-engine-dorking" },
+    { "path": "./skills/bug-bounty-cert-transparency-logs" },
+    { "path": "./skills/bug-bounty-dns-stochastic-bruteforce" }
   ]
 }

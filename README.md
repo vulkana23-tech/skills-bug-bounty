@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **60 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools` y `projectdiscovery/nuclei-templates`).
+Colección completa y estructurada de **65 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates` y `aboul3la/Sublist3r`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **60 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 60 skills para importación automática
+├── skills.json                         # Registro de 65 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -70,7 +70,12 @@ bug-bounty-skills/
     ├── bug-bounty-cve-fast-scanning/   # Escaneo Rápido de CVEs de Alta Severidad con Nuclei
     ├── bug-bounty-misconfig-detection/ # Detección Automatizada de Malas Configuraciones de Servidor
     ├── bug-bounty-exposed-panels-detection/# Descubrimiento & Fingerprinting de Paneles Expuestos
-    └── bug-bounty-custom-protocol-scans/# Escaneo de Protocolos No-Web (TCP/DNS/SSL/Network)
+    ├── bug-bounty-custom-protocol-scans/# Escaneo de Protocolos No-Web (TCP/DNS/SSL/Network)
+    ├── bug-bounty-subdomain-osint-enum/# Enumeración Pasiva de Subdominios vía OSINT (Sublist3r)
+    ├── bug-bounty-reverse-dns-mapping/ # Mapeo de Registros Reverse DNS (PTR) & Bloques CIDR
+    ├── bug-bounty-search-engine-dorking/# Search Engine Dorking Avanzado (Google/Bing Dorks)
+    ├── bug-bounty-cert-transparency-logs/# Análisis de Logs de Transparencia de Certificados (crt.sh)
+    └── bug-bounty-dns-stochastic-bruteforce/# Fuerza Bruta Estocástica & Permutación DNS
 ```
 
 ---
@@ -92,7 +97,7 @@ Para hacer que Claude Code reconozca estas habilidades global o localmente:
 - **A nivel global**: Copia las carpetas en el directorio global de configuración de Claude Code (ej. `~/.claude/skills/`).
 
 ### 3. En Antigravity / Agentic IDEs
-Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.gemini\config\skills.json` o en `.agents/skills.json`):
+Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.gemini\config\skills.json` o en `.agents/json`):
 
 ```json
 {
@@ -104,7 +109,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (60 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (65 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -168,6 +173,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-misconfig-detection` | Detección automatizada de malas configuraciones de servidor con Nuclei |
 | `bug-bounty-exposed-panels-detection` | Descubrimiento e identificación de paneles de administración expuestos |
 | `bug-bounty-custom-protocol-scans` | Escaneo de protocolos no-web (TCP, DNS, SSL, Network) con Nuclei |
+| `bug-bounty-subdomain-osint-enum` | Enumeración pasiva de subdominios vía OSINT y motores de búsqueda (Sublist3r) |
+| `bug-bounty-reverse-dns-mapping` | Mapeo de registros Reverse DNS (PTR) y bloques CIDR organizacionales |
+| `bug-bounty-search-engine-dorking` | Search Engine Dorking avanzado para exposición de paneles y datos |
+| `bug-bounty-cert-transparency-logs` | Análisis de logs de transparencia de certificados SSL/TLS (crt.sh) |
+| `bug-bounty-dns-stochastic-bruteforce` | Fuerza bruta estocástica y permutación de nombres DNS (puredns/subbrute) |
 
 ---
 
@@ -184,3 +194,4 @@ Basado en los repositorios de ciberseguridad:
 - `Bug-Bounty-Hunting-Methodology-2025`
 - `hackThacker/Bug-Bounty-Tools`
 - `projectdiscovery/nuclei-templates`
+- `aboul3la/Sublist3r`
