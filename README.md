@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **19 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports` y `swisskyrepo/PayloadsAllTheThings`).
+Colección completa y estructurada de **25 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports` y `swisskyrepo/PayloadsAllTheThings`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **19 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 19 skills para importación automática
+├── skills.json                         # Registro de 25 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -29,7 +29,13 @@ bug-bounty-skills/
     ├── bug-bounty-lfi-rfi/             # Local/Remote File Inclusion, Path Traversal & PHP Wrappers
     ├── bug-bounty-jwt-security/        # Security Assessment de JWT, Alg: None & Key Confusion
     ├── bug-bounty-file-upload/         # Unrestricted File Upload, Extension Bypasses & Polyglots
-    └── bug-bounty-cve-exploits/        # Matriz de Vulnerabilidades CVEs Conocidos & Parcheo Defensivo
+    ├── bug-bounty-cve-exploits/        # Matriz de Vulnerabilidades CVEs Conocidos & Parcheo Defensivo
+    ├── bug-bounty-cors/                # CORS Misconfigurations, Origin Reflection & Null Origin
+    ├── bug-bounty-prototype-pollution/ # Prototype Pollution Client/Server (Node.js & JS)
+    ├── bug-bounty-request-smuggling/   # HTTP Request Smuggling (CL.TE, TE.CL, TE.TE) & Desync
+    ├── bug-bounty-websockets/          # Seguridad en WebSockets & Cross-Site WebSocket Hijacking
+    ├── bug-bounty-html-injection/      # HTML Injection, Dangling Markup & Content Spoofing
+    └── bug-bounty-rate-limit-bypass/   # Evasión de Limitación de Tasa (Rate Limiting) & IP Headers
 ```
 
 ---
@@ -63,7 +69,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo de Habilidades (19 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (25 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -86,6 +92,12 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-jwt-security` | Auditoría de JWT, omisión de firma (alg: none), JKU injection y RS256/HS256 confusion |
 | `bug-bounty-file-upload` | Carga de archivos desprotegida, bypasses de extensión/MIME-type y polyglots |
 | `bug-bounty-cve-exploits` | Matriz de parches y remediación de CVEs conocidos (Log4Shell, Spring4Shell, Shellshock) |
+| `bug-bounty-cors` | CORS Misconfigurations, origin reflection, null origin y credenciales de usuario |
+| `bug-bounty-prototype-pollution` | Vulnerabilidades Prototype Pollution Client/Server (Node.js & JavaScript) |
+| `bug-bounty-request-smuggling` | HTTP Request Smuggling (CL.TE, TE.CL, TE.TE) y desincronización de solicitudes |
+| `bug-bounty-websockets` | Seguridad en conexiones WebSocket y Cross-Site WebSocket Hijacking (CSWSH) |
+| `bug-bounty-html-injection` | HTML Injection, Dangling Markup Injection y exfiltración de tokens sin JS |
+| `bug-bounty-rate-limit-bypass` | Evasión de controles de Rate Limiting e IP spoofing via encabezados HTTP |
 
 ---
 

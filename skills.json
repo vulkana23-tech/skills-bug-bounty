@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
@@ -22,6 +22,12 @@
     { "path": "./skills/bug-bounty-lfi-rfi" },
     { "path": "./skills/bug-bounty-jwt-security" },
     { "path": "./skills/bug-bounty-file-upload" },
-    { "path": "./skills/bug-bounty-cve-exploits" }
+    { "path": "./skills/bug-bounty-cve-exploits" },
+    { "path": "./skills/bug-bounty-cors" },
+    { "path": "./skills/bug-bounty-prototype-pollution" },
+    { "path": "./skills/bug-bounty-request-smuggling" },
+    { "path": "./skills/bug-bounty-websockets" },
+    { "path": "./skills/bug-bounty-html-injection" },
+    { "path": "./skills/bug-bounty-rate-limit-bypass" }
   ]
 }
