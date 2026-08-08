@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **25 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports` y `swisskyrepo/PayloadsAllTheThings`).
+Colección completa y estructurada de **30 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings` y `EdOverflow/bugbounty-cheatsheet`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **25 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 25 skills para importación automática
+├── skills.json                         # Registro de 30 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -35,7 +35,12 @@ bug-bounty-skills/
     ├── bug-bounty-request-smuggling/   # HTTP Request Smuggling (CL.TE, TE.CL, TE.TE) & Desync
     ├── bug-bounty-websockets/          # Seguridad en WebSockets & Cross-Site WebSocket Hijacking
     ├── bug-bounty-html-injection/      # HTML Injection, Dangling Markup & Content Spoofing
-    └── bug-bounty-rate-limit-bypass/   # Evasión de Limitación de Tasa (Rate Limiting) & IP Headers
+    ├── bug-bounty-rate-limit-bypass/   # Evasión de Limitación de Tasa (Rate Limiting) & IP Headers
+    ├── bug-bounty-crlf-injection/      # CRLF Injection & HTTP Response Splitting
+    ├── bug-bounty-csv-injection/       # CSV / Formula Injection & DDE Execution
+    ├── bug-bounty-xslt-injection/      # XSLT Injection & XML Document Reading
+    ├── bug-bounty-command-injection/   # OS Command Injection & Filter Bypasses
+    └── bug-bounty-content-injection/   # Content Injection & Text Spoofing
 ```
 
 ---
@@ -69,7 +74,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (25 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (30 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -98,6 +103,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-websockets` | Seguridad en conexiones WebSocket y Cross-Site WebSocket Hijacking (CSWSH) |
 | `bug-bounty-html-injection` | HTML Injection, Dangling Markup Injection y exfiltración de tokens sin JS |
 | `bug-bounty-rate-limit-bypass` | Evasión de controles de Rate Limiting e IP spoofing via encabezados HTTP |
+| `bug-bounty-crlf-injection` | CRLF Injection, HTTP Response Splitting y Set-Cookie injection |
+| `bug-bounty-csv-injection` | CSV / Formula Injection en hojas de cálculo y ejecución DDE |
+| `bug-bounty-xslt-injection` | XSLT Injection, lectura de documentos XML locales y RCE en procesadores |
+| `bug-bounty-command-injection` | Inyección de comandos OS, bypass de espacios y blind exfiltration |
+| `bug-bounty-content-injection` | Content Spoofing, Text Injection y alteración de UI |
 
 ---
 
@@ -107,3 +117,4 @@ Basado en los repositorios de ciberseguridad:
 - `djadmin/awesome-bug-bounty`
 - `reddelexc/hackerone-reports`
 - `swisskyrepo/PayloadsAllTheThings`
+- `EdOverflow/bugbounty-cheatsheet`

@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "2.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings)",
+  "version": "3.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -28,6 +28,11 @@
     { "path": "./skills/bug-bounty-request-smuggling" },
     { "path": "./skills/bug-bounty-websockets" },
     { "path": "./skills/bug-bounty-html-injection" },
-    { "path": "./skills/bug-bounty-rate-limit-bypass" }
+    { "path": "./skills/bug-bounty-rate-limit-bypass" },
+    { "path": "./skills/bug-bounty-crlf-injection" },
+    { "path": "./skills/bug-bounty-csv-injection" },
+    { "path": "./skills/bug-bounty-xslt-injection" },
+    { "path": "./skills/bug-bounty-command-injection" },
+    { "path": "./skills/bug-bounty-content-injection" }
   ]
 }
