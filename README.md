@@ -1,6 +1,7 @@
 # Bug Bounty & Security Agent Skills Collection (100 Skills Milestone)
 
 [![CI/CD Validation](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml)
+[![Security & Secret Scan](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/security-scan.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/security-scan.yml)
 [![Auto-Update CISA KEV](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml)
 [![Skills Count](https://img.shields.io/badge/Skills-100%20Skills-brightgreen.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![Ethical Framing](https://img.shields.io/badge/Refusal%20Bypass-Ethical%20Framing-green.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
@@ -10,7 +11,26 @@
 
 A comprehensive, curated collection of **100 Agent Skills** for **OpenCode**, **Claude Code**, **Cline / Roo Code**, **Antigravity**, **Cursor**, and **RAG-enabled AI Assistants**. 
 
-Featuring **Ethical Framing & Refusal Prevention Rules (`.clinerules`, `.cursorrules`, `AGENTS.md`)**, **Model Context Protocol (MCP)** tool call mappings, **CISA Known Exploited Vulnerabilities (KEV)** dynamic feeds, **Few-Shot Learning Real-World Write-ups**, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
+Featuring **Ethical Framing & Refusal Prevention Rules (`.clinerules`, `.cursorrules`, `AGENTS.md`)**, **Automated GitHub CodeQL & Gitleaks Security Scans**, **Model Context Protocol (MCP)** tool call mappings, **CISA Known Exploited Vulnerabilities (KEV)** dynamic feeds, **Few-Shot Learning Real-World Write-ups**, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
+
+---
+
+## 🛡️ Repository Security & Hardening Guide
+
+To keep this public repository secure against malicious PRs or accidental secret leaks, enable the following native GitHub features under **Settings**:
+
+### 1. Branch Protection Rules (`main`)
+- Navigate to **Settings > Branches > Add branch protection rule**.
+- Set **Branch name pattern** to `main`.
+- Enable **Require a pull request before merging** and **Require approvals** (1 approval).
+
+### 2. Code Security & Secret Scanning
+- Navigate to **Settings > Code security and analysis**.
+- Enable: **Dependency graph**, **Dependabot alerts**, **Secret scanning**, and **Secret scanning -> Push protection**.
+
+### 3. Automated Actions Security Scan
+This repo includes automated CodeQL & Gitleaks workflows:
+- [`.github/workflows/security-scan.yml`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/.github/workflows/security-scan.yml)
 
 ---
 
@@ -99,13 +119,14 @@ Connect your AI Agent to local CLI tools (`subfinder`, `nmap`, `httpx`, `nuclei`
 bug-bounty-skills/
 ├── README.md                           # Master documentation & selection guide
 ├── skills.json                         # Master Manifest (100 skills)
-├── .clinerules                         # 🛡️ Cline & Roo Code Ethical Framing & Auto-Routing [NUEVO]
-├── .cursorrules                        # 🛡️ Cursor IDE Ethical Framing & Auto-Routing [NUEVO]
-├── AGENTS.md                           # 🛡️ OpenCode Ethical Framing & Auto-Routing [NUEVO]
+├── .clinerules                         # 🛡️ Cline & Roo Code Ethical Framing & Auto-Routing
+├── .cursorrules                        # 🛡️ Cursor IDE Ethical Framing & Auto-Routing
+├── AGENTS.md                           # 🛡️ OpenCode Ethical Framing & Auto-Routing
 ├── agent.py                            # 🤖 Workflow Orchestrator CLI
 ├── install.sh                          # One-line Linux/macOS installer
 ├── install.ps1                         # One-line Windows PowerShell installer
 ├── .github/workflows/validate.yml      # CI/CD integrity & JSON validation workflow
+├── .github/workflows/security-scan.yml# 🛡️ CodeQL & Gitleaks secret scan workflow [NUEVO]
 ├── .github/workflows/auto-update-feeds.yml# 🔄 Weekly CISA KEV feed auto-update
 ├── scripts/
 │   └── fetch_cisa_kev.py               # ⚡ Python CISA KEV feed fetcher
