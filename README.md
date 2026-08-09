@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **85 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass`, `smicallef/spiderfoot`, `kathanp19/JSFScan.sh` y `defparam/smuggler`).
+Colección completa y estructurada de **90 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass`, `smicallef/spiderfoot`, `kathanp19/JSFScan.sh`, `defparam/smuggler` y `PortSwigger/turbo-intruder`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **85 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 85 skills para importación automática
+├── skills.json                         # Registro de 90 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -95,7 +95,12 @@ bug-bounty-skills/
     ├── bug-bounty-socket-poisoning-mitigation/# Mitigación de Socket Poisoning & Web Cache Poisoning
     ├── bug-bounty-single-packet-desync/ # Orquestación de Ataques Single-Packet TCP para Desincronización
     ├── bug-bounty-h2-h1-downgrade-smuggling/# HTTP/2 a HTTP/1.1 Downgrade Smuggling en Proxies Frontales
-    └── bug-bounty-smuggling-payload-bypasses/# Evasión de Filtros WAF en HTTP Request Smuggling
+    ├── bug-bounty-smuggling-payload-bypasses/# Evasión de Filtros WAF en HTTP Request Smuggling
+    ├── bug-bounty-turbo-intruder-python-scripting/# Orquestación de Ataques con Scripts Python (Turbo Intruder)
+    ├── bug-bounty-race-condition-single-packet-h2/# Race Conditions con HTTP/2 & Single-Packet Sync
+    ├── bug-bounty-custom-http-engine-tuning/# Ajuste y Optimización del Motor HTTP Personalizado
+    ├── bug-bounty-response-diffing-filtering/# Algoritmo de Filtrado Inteligente & Diffing de Respuestas
+    └── bug-bounty-mcp-ai-automated-fuzzing/# Fuzzing Automatizado con Servidor MCP & Agentes de IA
 ```
 
 ---
@@ -129,7 +134,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (85 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (90 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -218,6 +223,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-single-packet-desync` | Orquestación de Ataques Single-Packet TCP para Desincronización |
 | `bug-bounty-h2-h1-downgrade-smuggling` | HTTP/2 a HTTP/1.1 Downgrade Smuggling en Proxies Frontales |
 | `bug-bounty-smuggling-payload-bypasses` | Evasión de Filtros WAF en HTTP Request Smuggling |
+| `bug-bounty-turbo-intruder-python-scripting` | Orquestación de ataques con scripts Python en Turbo Intruder |
+| `bug-bounty-race-condition-single-packet-h2` | Pruebas de condiciones de carrera (Race Conditions) con HTTP/2 |
+| `bug-bounty-custom-http-engine-tuning` | Optimización y ajuste fino del motor HTTP personalizado de Turbo Intruder |
+| `bug-bounty-response-diffing-filtering` | Algoritmo de comparación estructural y filtrado inteligente de respuestas |
+| `bug-bounty-mcp-ai-automated-fuzzing` | Automatización de fuzzing con servidores MCP y agentes de IA |
 
 ---
 
@@ -239,3 +249,4 @@ Basado en los repositorios de ciberseguridad:
 - `smicallef/spiderfoot`
 - `kathanp19/JSFScan.sh`
 - `defparam/smuggler`
+- `PortSwigger/turbo-intruder`
