@@ -1,0 +1,53 @@
+name: Validate Repository Integrity & JSON Schemas
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate Master JSON Manifest Syntax (skills.json)
+        run: python3 -m json.tool skills.json > /dev/null
+
+      - name: Validate Profiles JSON Syntax (profiles/*.json)
+        run: |
+          for f in profiles/*.json; do
+            echo "Validating $f..."
+            python3 -m json.tool "$f" > /dev/null
+          done
+
+      - name: Validate RAG Chunks JSON Syntax (rag/chunks/*.json)
+        run: |
+          for f in rag/chunks/*.json; do
+            echo "Validating $f..."
+            python3 -m json.tool "$f" > /dev/null
+          done
+
+      - name: Verify All Registered SKILL.md Files Exist
+        run: |
+          python3 -c "
+          import json, os, sys
+          with open('skills.json') as f:
+              data = json.load(f)
+          missing = 0
+          for entry in data['entries']:
+              path = os.path.join(entry['path'], 'SKILL.md')
+              if not os.path.exists(path):
+                  print(f'❌ Missing SKILL.md at: {path}')
+                  missing += 1
+          if missing > 0:
+              sys.exit(1)
+          print(f'✅ All {len(data[\"entries\"])} registered skills verified successfully.')
+          "
