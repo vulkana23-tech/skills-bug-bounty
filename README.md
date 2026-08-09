@@ -3,13 +3,24 @@
 [![CI/CD Validation](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml)
 [![Auto-Update CISA KEV](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml)
 [![Skills Count](https://img.shields.io/badge/Skills-100%20Skills-brightgreen.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
+[![Ethical Framing](https://img.shields.io/badge/Refusal%20Bypass-Ethical%20Framing-green.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![MCP Ready](https://img.shields.io/badge/MCP-Enabled-purple.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![OpenCode Ready](https://img.shields.io/badge/OpenCode-Compatible-blue.svg)](https://opencode.ai)
 [![Claude Code Ready](https://img.shields.io/badge/Claude%20Code-Compatible-orange.svg)](https://claude.ai)
 
-A comprehensive, curated collection of **100 Agent Skills** for **OpenCode**, **Claude Code**, **Antigravity**, **Cursor**, and **RAG-enabled AI Assistants**. 
+A comprehensive, curated collection of **100 Agent Skills** for **OpenCode**, **Claude Code**, **Cline / Roo Code**, **Antigravity**, **Cursor**, and **RAG-enabled AI Assistants**. 
 
-Featuring **Model Context Protocol (MCP)** tool call mappings, **CISA Known Exploited Vulnerabilities (KEV)** dynamic feeds, **Few-Shot Learning Real-World Write-ups**, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
+Featuring **Ethical Framing & Refusal Prevention Rules (`.clinerules`, `.cursorrules`, `AGENTS.md`)**, **Model Context Protocol (MCP)** tool call mappings, **CISA Known Exploited Vulnerabilities (KEV)** dynamic feeds, **Few-Shot Learning Real-World Write-ups**, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
+
+---
+
+## 🛡️ Ethical Framing & Automatic Profile Routing (.clinerules / .cursorrules)
+
+Prevents commercial LLM refusal blocks ("I cannot assist with this") by framing queries within authorized defensive audit contexts and automatically routes queries to the exact profile:
+
+- **Cline / Roo Code Rules**: [`.clinerules`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/.clinerules)
+- **Cursor IDE Rules**: [`.cursorrules`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/.cursorrules)
+- **OpenCode Agent Rules**: [`AGENTS.md`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/AGENTS.md)
 
 ---
 
@@ -88,17 +99,17 @@ Connect your AI Agent to local CLI tools (`subfinder`, `nmap`, `httpx`, `nuclei`
 bug-bounty-skills/
 ├── README.md                           # Master documentation & selection guide
 ├── skills.json                         # Master Manifest (100 skills)
+├── .clinerules                         # 🛡️ Cline & Roo Code Ethical Framing & Auto-Routing [NUEVO]
+├── .cursorrules                        # 🛡️ Cursor IDE Ethical Framing & Auto-Routing [NUEVO]
+├── AGENTS.md                           # 🛡️ OpenCode Ethical Framing & Auto-Routing [NUEVO]
 ├── agent.py                            # 🤖 Workflow Orchestrator CLI
 ├── install.sh                          # One-line Linux/macOS installer
 ├── install.ps1                         # One-line Windows PowerShell installer
 ├── .github/workflows/validate.yml      # CI/CD integrity & JSON validation workflow
-├── .github/workflows/auto-update-feeds.yml# 🔄 Weekly CISA KEV feed auto-update [NUEVO]
+├── .github/workflows/auto-update-feeds.yml# 🔄 Weekly CISA KEV feed auto-update
 ├── scripts/
-│   └── fetch_cisa_kev.py               # ⚡ Python CISA KEV feed fetcher [NUEVO]
-├── knowledge/writeups/                 # 📚 Real-world case studies for few-shot learning [NUEVO]
-│   ├── uber-oauth-account-takeover-chain.md
-│   ├── shopify-graphql-idor-bfla.md
-│   └── aws-imdsv2-ssrf-cloud-pivot.md
+│   └── fetch_cisa_kev.py               # ⚡ Python CISA KEV feed fetcher
+├── knowledge/writeups/                 # 📚 Real-world case studies for few-shot learning
 ├── mcp/                                # 🛠️ MCP Configuration & Tool Mappings
 ├── payloads/                           # 💣 XSS and SQLi polyglots
 ├── wordlists/                          # 📝 API routes and subdomain dictionaries
