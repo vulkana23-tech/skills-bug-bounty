@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "bug-bounty-skills-recon-osint",
+  "version": "1.0.0",
+  "description": "Peril de Carga Ligera: Reconocimiento, OSINT, Subdominios & Mapeo de Infraestructura (25 Skills)",
+  "entries": [
+    { "path": "../skills/bug-bounty-recon" },
+    { "path": "../skills/bug-bounty-osint-threat-intel" },
+    { "path": "../skills/bug-bounty-target-selection" },
+    { "path": "../skills/bug-bounty-information-disclosure" },
+    { "path": "../skills/bug-bounty-recon-pipeline-2025" },
+    { "path": "../skills/bug-bounty-port-service-discovery" },
+    { "path": "../skills/bug-bounty-parameter-mining" },
+    { "path": "../skills/bug-bounty-visual-recon" },
+    { "path": "../skills/bug-bounty-secret-leak-detection" },
+    { "path": "../skills/bug-bounty-subdomain-osint-enum" },
+    { "path": "../skills/bug-bounty-reverse-dns-mapping" },
+    { "path": "../skills/bug-bounty-search-engine-dorking" },
+    { "path": "../skills/bug-bounty-cert-transparency-logs" },
+    { "path": "../skills/bug-bounty-dns-stochastic-bruteforce" },
+    { "path": "../skills/bug-bounty-attack-surface-mapping" },
+    { "path": "../skills/bug-bounty-asn-infrastructure-recon" },
+    { "path": "../skills/bug-bounty-graph-database-analytics" },
+    { "path": "../skills/bug-bounty-oam-asset-modeling" },
+    { "path": "../skills/bug-bounty-active-dns-alterations" },
+    { "path": "../skills/bug-bounty-osint-automation-framework" },
+    { "path": "../skills/bug-bounty-darkweb-leak-monitoring" },
+    { "path": "../skills/bug-bounty-entity-extraction-metadata" },
+    { "path": "../skills/bug-bounty-threat-intel-feeds" },
+    { "path": "../skills/bug-bounty-yaml-correlation-rules" },
+    { "path": "../skills/bug-bounty-js-file-collection" }
+  ]
+}

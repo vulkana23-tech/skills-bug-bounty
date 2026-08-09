@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "bug-bounty-skills-mobile-iot-binary",
+  "version": "1.0.0",
+  "description": "Perfil de Carga Ligera: Seguridad Móvil, Binarios, IoT Firmware & Biometría (15 Skills)",
+  "entries": [
+    { "path": "../skills/bug-bounty-mobile-assessment" },
+    { "path": "../skills/bug-bounty-reverse-engineering" },
+    { "path": "../skills/bug-bounty-privilege-escalation" },
+    { "path": "../skills/bug-bounty-methodology-playbook" },
+    { "path": "../skills/bug-bounty-vulnerability-disclosure" },
+    { "path": "../skills/bug-bounty-reporting" },
+    { "path": "../skills/bug-bounty-iot-device-auditing" },
+    { "path": "../skills/bug-bounty-session-ip-binding" },
+    { "path": "../skills/bug-bounty-deepfake-ai-spoofing" },
+    { "path": "../skills/bug-bounty-ctf-binary-exploitation" },
+    { "path": "../skills/bug-bounty-anomaly-login-blocking" }
+  ]
+}
