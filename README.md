@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **75 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass` y `smicallef/spiderfoot`).
+Colección completa y estructurada de **80 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass`, `smicallef/spiderfoot` y `kathanp19/JSFScan.sh`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **75 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 75 skills para importación automática
+├── skills.json                         # Registro de 80 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -85,7 +85,12 @@ bug-bounty-skills/
     ├── bug-bounty-darkweb-leak-monitoring/# Monitoreo de Dark Web & Fugas de Credenciales (HIBP/Pastes)
     ├── bug-bounty-entity-extraction-metadata/# Extracción de Entidades & Metadatos (EXIF/Doc/Crypto)
     ├── bug-bounty-threat-intel-feeds/  # Correlación con Feeds de Inteligencia de Amenazas (Shodan/OTX)
-    └── bug-bounty-yaml-correlation-rules/# Motor de Reglas de Correlación YAML para Eventos OSINT
+    ├── bug-bounty-yaml-correlation-rules/# Motor de Reglas de Correlación YAML para Eventos OSINT
+    ├── bug-bounty-js-file-collection/  # Recolección Automatizada de Archivos JavaScript (JSFScan)
+    ├── bug-bounty-js-endpoint-extraction/# Extracción de Endpoints & Rutas de API en Bundles JS
+    ├── bug-bounty-js-secret-scanning/  # Escaneo de Secretos, Tokens API & Credenciales en JS
+    ├── bug-bounty-dom-xss-source-sink/ # Análisis de Fuentes (Sources) & Sumideros (Sinks) DOM XSS
+    └── bug-bounty-js-custom-wordlists/ # Generación de Diccionarios Custom a partir de JS
 ```
 
 ---
@@ -119,7 +124,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (75 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (80 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -198,6 +203,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-entity-extraction-metadata` | Extracción de entidades (emails, wallets) y metadatos en documentos |
 | `bug-bounty-threat-intel-feeds` | Correlación con feeds de inteligencia de amenazas (Shodan, GreyNoise, OTX) |
 | `bug-bounty-yaml-correlation-rules` | Motor de reglas de correlación YAML para vincular eventos e identificar riesgos |
+| `bug-bounty-js-file-collection` | Recolección automatizada de archivos JavaScript de un objetivo |
+| `bug-bounty-js-endpoint-extraction` | Extracción de endpoints y rutas de API en archivos JavaScript (LinkFinder) |
+| `bug-bounty-js-secret-scanning` | Escaneo de secretos, tokens de API y credenciales en JS (SecretFinder) |
+| `bug-bounty-dom-xss-source-sink` | Identificación de Fuentes (Sources) y Sumideros (Sinks) DOM XSS |
+| `bug-bounty-js-custom-wordlists` | Generación de diccionarios personalizados (Wordlists) desde archivos JS |
 
 ---
 
@@ -217,3 +227,4 @@ Basado en los repositorios de ciberseguridad:
 - `aboul3la/Sublist3r`
 - `owasp-amass/amass`
 - `smicallef/spiderfoot`
+- `kathanp19/JSFScan.sh`

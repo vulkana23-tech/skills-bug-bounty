@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "12.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT)",
+  "version": "13.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -78,6 +78,11 @@
     { "path": "./skills/bug-bounty-darkweb-leak-monitoring" },
     { "path": "./skills/bug-bounty-entity-extraction-metadata" },
     { "path": "./skills/bug-bounty-threat-intel-feeds" },
-    { "path": "./skills/bug-bounty-yaml-correlation-rules" }
+    { "path": "./skills/bug-bounty-yaml-correlation-rules" },
+    { "path": "./skills/bug-bounty-js-file-collection" },
+    { "path": "./skills/bug-bounty-js-endpoint-extraction" },
+    { "path": "./skills/bug-bounty-js-secret-scanning" },
+    { "path": "./skills/bug-bounty-dom-xss-source-sink" },
+    { "path": "./skills/bug-bounty-js-custom-wordlists" }
   ]
 }
