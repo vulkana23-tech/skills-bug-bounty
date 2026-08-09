@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **95 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass`, `smicallef/spiderfoot`, `kathanp19/JSFScan.sh`, `defparam/smuggler`, `PortSwigger/turbo-intruder` y `riteshekbote/bug-bounty`).
+Colección completa y estructurada de **100 Agent Skills (Hito Cien)** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass`, `smicallef/spiderfoot`, `kathanp19/JSFScan.sh`, `defparam/smuggler`, `PortSwigger/turbo-intruder`, `riteshekbote/bug-bounty` y `cybertechajju/bugbounty`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **95 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 95 skills para importación automática
+├── skills.json                         # Registro de 100 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -105,7 +105,12 @@ bug-bounty-skills/
     ├── bug-bounty-session-ip-binding/  # Auditoría de Fijación de Sesión & Vinculación de IP de Cliente
     ├── bug-bounty-deepfake-ai-spoofing/ # Evaluación de Riesgos en Verificación Biométrica KYC & AI Deepfakes
     ├── bug-bounty-ctf-binary-exploitation/# Fundamentos de Análisis de Binarios & Protecciones (NX/ASLR)
-    └── bug-bounty-anomaly-login-blocking/# Detección de Anomalías & Bloqueo Adaptativo de Inicios de Sesión
+    ├── bug-bounty-anomaly-login-blocking/# Detección de Anomalías & Bloqueo Adaptativo de Inicios de Sesión
+    ├── bug-bounty-bchecks-automation/  # Automatización con Burp Suite BChecks (CyberTechAjju) [NUEVO]
+    ├── bug-bounty-403-401-bypasses/    # Técnicas Avanzadas de Bypass 403 Forbidden & 401 [NUEVO]
+    ├── bug-bounty-vulnerability-chaining/# Encadenamiento Estratégico de Vulnerabilidades [NUEVO]
+    ├── bug-bounty-js-secret-crawling/  # Rastreo & Extracción de Secretos JS con NightCrawler [NUEVO]
+    └── bug-bounty-waf-csp-evasions/    # Evasiones Avanzadas de WAF y CSP con Script Gadgets [NUEVO]
 ```
 
 ---
@@ -139,7 +144,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (95 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (100 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -238,6 +243,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-deepfake-ai-spoofing` | Evaluación de riesgos en verificación biométrica (KYC) y AI Deepfakes |
 | `bug-bounty-ctf-binary-exploitation` | Fundamentos de análisis de binarios y protecciones (NX/ASLR/Stack Canaries) |
 | `bug-bounty-anomaly-login-blocking` | Evaluación de mecanismos de detección de anomalías y bloqueo de inicios de sesión |
+| `bug-bounty-bchecks-automation` | Automatización con Burp Suite BChecks en YAML/BScript |
+| `bug-bounty-403-401-bypasses` | Técnicas avanzadas de omisión de controles de acceso 403 Forbidden y 401 |
+| `bug-bounty-vulnerability-chaining` | Encadenamiento estratégico de vulnerabilidades de bajo impacto |
+| `bug-bounty-js-secret-crawling` | Rastreo y extracción avanzada de secretos en código JavaScript (NightCrawler) |
+| `bug-bounty-waf-csp-evasions` | Evasión avanzada de WAF y Content Security Policy (CSP) con Script Gadgets |
 
 ---
 
@@ -261,3 +271,4 @@ Basado en los repositorios de ciberseguridad:
 - `defparam/smuggler`
 - `PortSwigger/turbo-intruder`
 - `riteshekbote/bug-bounty`
+- `cybertechajju/bugbounty`

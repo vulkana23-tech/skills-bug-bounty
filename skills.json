@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "16.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security, Smuggler HTTP Request Smuggling, PortSwigger Turbo Intruder, Ritesh Ekbote Bug Bounty Methodology)",
+  "version": "17.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security, Smuggler HTTP Request Smuggling, PortSwigger Turbo Intruder, Ritesh Ekbote Bug Bounty Methodology, CyberTechAjju Bug Bounty Toolkit)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -98,6 +98,11 @@
     { "path": "./skills/bug-bounty-session-ip-binding" },
     { "path": "./skills/bug-bounty-deepfake-ai-spoofing" },
     { "path": "./skills/bug-bounty-ctf-binary-exploitation" },
-    { "path": "./skills/bug-bounty-anomaly-login-blocking" }
+    { "path": "./skills/bug-bounty-anomaly-login-blocking" },
+    { "path": "./skills/bug-bounty-bchecks-automation" },
+    { "path": "./skills/bug-bounty-403-401-bypasses" },
+    { "path": "./skills/bug-bounty-vulnerability-chaining" },
+    { "path": "./skills/bug-bounty-js-secret-crawling" },
+    { "path": "./skills/bug-bounty-waf-csp-evasions" }
   ]
 }
