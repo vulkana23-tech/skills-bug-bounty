@@ -1,0 +1,9 @@
+[
+  {
+    "id": "mobile-iot-binary-chunk-1",
+    "domain": "Mobile, IoT & Binary Security",
+    "skills": ["bug-bounty-mobile-assessment", "bug-bounty-iot-device-auditing", "bug-bounty-ctf-binary-exploitation"],
+    "tags": ["mobile", "android", "ios", "iot", "firmware", "binary"],
+    "content": "Mobile & IoT Hardening: Audit Android/iOS apps (OWASP Mobile Top 10), bypass SSL Pinning with Frida. Extract and analyze embedded IoT firmware images with binwalk. Verify binary protections (NX, ASLR, PIE, Canaries)."
+  }
+]

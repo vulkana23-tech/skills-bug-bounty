@@ -1,0 +1,16 @@
+[
+  {
+    "id": "recon-osint-chunk-1",
+    "domain": "Reconnaissance & OSINT",
+    "skills": ["bug-bounty-recon", "bug-bounty-subdomain-osint-enum", "bug-bounty-cert-transparency-logs"],
+    "tags": ["subdomains", "crt.sh", "dns", "osint"],
+    "content": "Reconnaissance Methodology: Active and passive subdomain enumeration combining passive search engines (subfinder, assetfinder) with stochastic brute-forcing (puredns). Parse SSL Certificate Transparency logs via crt.sh to map legacy infrastructure. Extract PTR records via Reverse DNS mapping."
+  },
+  {
+    "id": "recon-osint-chunk-2",
+    "domain": "Attack Surface Mapping",
+    "skills": ["bug-bounty-attack-surface-mapping", "bug-bounty-asn-infrastructure-recon", "bug-bounty-oam-asset-modeling"],
+    "tags": ["amass", "oam", "asn", "bgp"],
+    "content": "OWASP Amass & Open Asset Model (OAM): Perform organizational asset discovery using amass intel -asn <ASN>. Store target relationships in a graph database (amass db) to analyze connections between load balancers, IPs, and subdomains."
+  }
+]

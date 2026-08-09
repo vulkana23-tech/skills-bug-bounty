@@ -1,0 +1,9 @@
+[
+  {
+    "id": "cloud-devops-chunk-1",
+    "domain": "Cloud & DevOps Security",
+    "skills": ["bug-bounty-cloud-security-audit", "bug-bounty-cloud-s3-audit", "bug-bounty-container-k8s-security"],
+    "tags": ["aws", "s3", "docker", "k8s", "iam"],
+    "content": "Cloud & Container Auditing: Discover public S3 storage buckets. Audit AWS IAM policy permissions. Assess Docker containers and Kubernetes ServiceAccount RBAC permissions for privilege escalation."
+  }
+]

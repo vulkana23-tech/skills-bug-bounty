@@ -1,0 +1,16 @@
+[
+  {
+    "id": "web-api-chunk-1",
+    "domain": "Web & API Vulnerabilities",
+    "skills": ["bug-bounty-xss", "bug-bounty-cors", "bug-bounty-dom-xss-source-sink"],
+    "tags": ["xss", "cors", "dom-xss", "client-side"],
+    "content": "Client-Side Vulnerabilities: Audit Reflected/Stored/DOM XSS. Inspect unsafe sources (location.search, location.hash) flowing into dangerous sinks (innerHTML, eval). Audit CORS misconfigurations with reflected Origin headers and Access-Control-Allow-Credentials: true."
+  },
+  {
+    "id": "web-api-chunk-2",
+    "domain": "Server-Side & Authorization",
+    "skills": ["bug-bounty-sqli", "bug-bounty-ssrf", "bug-bounty-idor", "bug-bounty-graphql"],
+    "tags": ["sqli", "ssrf", "idor", "graphql", "server-side"],
+    "content": "Server-Side Flaws: Test SQL Injection (Time-based, Blind, Union, OOB). Test SSRF against cloud metadata endpoints (169.254.169.254). Test IDOR and BOLA/BFLA in REST/GraphQL APIs by swapping user resource IDs."
+  }
+]
