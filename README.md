@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **70 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r` y `owasp-amass/amass`).
+Colección completa y estructurada de **75 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass` y `smicallef/spiderfoot`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **70 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 70 skills para importación automática
+├── skills.json                         # Registro de 75 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -80,7 +80,12 @@ bug-bounty-skills/
     ├── bug-bounty-asn-infrastructure-recon/# Reconocimiento de ASNs, Rutas BGP & Rangos IP (Amass)
     ├── bug-bounty-graph-database-analytics/# Análisis de Grafos de Relaciones de Infraestructura (Amass DB)
     ├── bug-bounty-oam-asset-modeling/  # Modelado Estandarizado de Activos - Open Asset Model (OAM)
-    └── bug-bounty-active-dns-alterations/# Alteraciones Activas de Nombres de Dominio & Sondeo Dinámico
+    ├── bug-bounty-active-dns-alterations/# Alteraciones Activas de Nombres de Dominio & Sondeo Dinámico
+    ├── bug-bounty-osint-automation-framework/# Marco de Automatización OSINT Multimodular (SpiderFoot)
+    ├── bug-bounty-darkweb-leak-monitoring/# Monitoreo de Dark Web & Fugas de Credenciales (HIBP/Pastes)
+    ├── bug-bounty-entity-extraction-metadata/# Extracción de Entidades & Metadatos (EXIF/Doc/Crypto)
+    ├── bug-bounty-threat-intel-feeds/  # Correlación con Feeds de Inteligencia de Amenazas (Shodan/OTX)
+    └── bug-bounty-yaml-correlation-rules/# Motor de Reglas de Correlación YAML para Eventos OSINT
 ```
 
 ---
@@ -114,7 +119,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (70 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (75 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -188,6 +193,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-graph-database-analytics` | Análisis de grafos de infraestructura con la base de datos de Amass (`amass db`) |
 | `bug-bounty-oam-asset-modeling` | Modelado estandarizado de activos con el Open Asset Model (OAM Schema) |
 | `bug-bounty-active-dns-alterations` | Alteraciones activas de nombres de dominio y sondeo dinámico con Amass |
+| `bug-bounty-osint-automation-framework` | Marco de automatización OSINT multimodular (SpiderFoot Pub/Sub CLI) |
+| `bug-bounty-darkweb-leak-monitoring` | Monitoreo de Dark Web y fugas de credenciales en breaches y pastebins |
+| `bug-bounty-entity-extraction-metadata` | Extracción de entidades (emails, wallets) y metadatos en documentos |
+| `bug-bounty-threat-intel-feeds` | Correlación con feeds de inteligencia de amenazas (Shodan, GreyNoise, OTX) |
+| `bug-bounty-yaml-correlation-rules` | Motor de reglas de correlación YAML para vincular eventos e identificar riesgos |
 
 ---
 
@@ -206,3 +216,4 @@ Basado en los repositorios de ciberseguridad:
 - `projectdiscovery/nuclei-templates`
 - `aboul3la/Sublist3r`
 - `owasp-amass/amass`
+- `smicallef/spiderfoot`
