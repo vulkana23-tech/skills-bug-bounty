@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "terminal-executor": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-terminal"],
+      "env": {}
+    },
+    "security-tools-runner": {
+      "command": "python3",
+      "args": ["-m", "mcp_security_runner"],
+      "description": "Model Context Protocol integration for CLI tools: subfinder, httpx, nmap, nuclei, ffuf, amass, spiderfoot"
+    }
+  },
+  "toolMappings": {
+    "recon": ["subfinder", "assetfinder", "amass", "httpx", "naabu", "gowitness"],
+    "web-api": ["ffuf", "arjun", "linkfinder", "secretfinder", "jwt_tool"],
+    "cloud": ["cloudfox", "s3scanner", "nuclei", "checkov"],
+    "advanced": ["smuggler.py", "turbo-intruder", "sqlmap"],
+    "mobile-binary": ["frida", "apktool", "binwalk", "checksec"]
+  }
+}

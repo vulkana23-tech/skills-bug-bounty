@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills-recon-osint",
-  "version": "1.0.0",
-  "description": "Peril de Carga Ligera: Reconocimiento, OSINT, Subdominios & Mapeo de Infraestructura (25 Skills)",
+  "version": "1.1.0",
+  "description": "Lightweight Profile: Reconnaissance, OSINT, Subdomains & Asset Mapping (25 Skills)",
+  "tools": ["subfinder", "assetfinder", "amass", "httpx", "naabu", "gowitness", "spiderfoot", "crt.sh"],
   "entries": [
     { "path": "../skills/bug-bounty-recon" },
     { "path": "../skills/bug-bounty-osint-threat-intel" },

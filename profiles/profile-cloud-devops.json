@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills-cloud-devops",
-  "version": "1.0.0",
-  "description": "Perfil de Carga Ligera: Infraestructura Cloud, DevOps, Buckets S3, Contenedores & K8s (15 Skills)",
+  "version": "1.1.0",
+  "description": "Lightweight Profile: Cloud Infrastructure, S3, Containers & K8s (15 Skills)",
+  "tools": ["nuclei", "s3scanner", "cloudfox", "checkov", "docker", "kubectl"],
   "entries": [
     { "path": "../skills/bug-bounty-subdomain-takeover" },
     { "path": "../skills/bug-bounty-cve-exploits" },

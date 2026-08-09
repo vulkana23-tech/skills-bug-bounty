@@ -1,8 +1,9 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills-web-api",
-  "version": "1.0.0",
-  "description": "Perfil de Carga Ligera: Auditoría Web & APIs (XSS, SQLi, IDOR, GraphQL, JWT, JS Recon, SSRF) (30 Skills)",
+  "version": "1.1.0",
+  "description": "Lightweight Profile: Web & API Security Audit (30 Skills)",
+  "tools": ["ffuf", "arjun", "linkfinder", "secretfinder", "jwt_tool", "gowitness", "burpsuite"],
   "entries": [
     { "path": "../skills/bug-bounty-xss" },
     { "path": "../skills/bug-bounty-sqli" },
