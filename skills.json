@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "15.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security, Smuggler HTTP Request Smuggling, PortSwigger Turbo Intruder)",
+  "version": "16.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security, Smuggler HTTP Request Smuggling, PortSwigger Turbo Intruder, Ritesh Ekbote Bug Bounty Methodology)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -93,6 +93,11 @@
     { "path": "./skills/bug-bounty-race-condition-single-packet-h2" },
     { "path": "./skills/bug-bounty-custom-http-engine-tuning" },
     { "path": "./skills/bug-bounty-response-diffing-filtering" },
-    { "path": "./skills/bug-bounty-mcp-ai-automated-fuzzing" }
+    { "path": "./skills/bug-bounty-mcp-ai-automated-fuzzing" },
+    { "path": "./skills/bug-bounty-iot-device-auditing" },
+    { "path": "./skills/bug-bounty-session-ip-binding" },
+    { "path": "./skills/bug-bounty-deepfake-ai-spoofing" },
+    { "path": "./skills/bug-bounty-ctf-binary-exploitation" },
+    { "path": "./skills/bug-bounty-anomaly-login-blocking" }
   ]
 }

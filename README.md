@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **90 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass`, `smicallef/spiderfoot`, `kathanp19/JSFScan.sh`, `defparam/smuggler` y `PortSwigger/turbo-intruder`).
+Colección completa y estructurada de **95 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r`, `owasp-amass/amass`, `smicallef/spiderfoot`, `kathanp19/JSFScan.sh`, `defparam/smuggler`, `PortSwigger/turbo-intruder` y `riteshekbote/bug-bounty`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **90 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 90 skills para importación automática
+├── skills.json                         # Registro de 95 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -100,7 +100,12 @@ bug-bounty-skills/
     ├── bug-bounty-race-condition-single-packet-h2/# Race Conditions con HTTP/2 & Single-Packet Sync
     ├── bug-bounty-custom-http-engine-tuning/# Ajuste y Optimización del Motor HTTP Personalizado
     ├── bug-bounty-response-diffing-filtering/# Algoritmo de Filtrado Inteligente & Diffing de Respuestas
-    └── bug-bounty-mcp-ai-automated-fuzzing/# Fuzzing Automatizado con Servidor MCP & Agentes de IA
+    ├── bug-bounty-mcp-ai-automated-fuzzing/# Fuzzing Automatizado con Servidor MCP & Agentes de IA
+    ├── bug-bounty-iot-device-auditing/  # Auditoría de Seguridad en Dispositivos IoT & Firmware (Ritesh Ekbote)
+    ├── bug-bounty-session-ip-binding/  # Auditoría de Fijación de Sesión & Vinculación de IP de Cliente
+    ├── bug-bounty-deepfake-ai-spoofing/ # Evaluación de Riesgos en Verificación Biométrica KYC & AI Deepfakes
+    ├── bug-bounty-ctf-binary-exploitation/# Fundamentos de Análisis de Binarios & Protecciones (NX/ASLR)
+    └── bug-bounty-anomaly-login-blocking/# Detección de Anomalías & Bloqueo Adaptativo de Inicios de Sesión
 ```
 
 ---
@@ -134,7 +139,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (90 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (95 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -228,6 +233,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-custom-http-engine-tuning` | Optimización y ajuste fino del motor HTTP personalizado de Turbo Intruder |
 | `bug-bounty-response-diffing-filtering` | Algoritmo de comparación estructural y filtrado inteligente de respuestas |
 | `bug-bounty-mcp-ai-automated-fuzzing` | Automatización de fuzzing con servidores MCP y agentes de IA |
+| `bug-bounty-iot-device-auditing` | Auditoría de seguridad en dispositivos IoT y firmware (Binwalk) |
+| `bug-bounty-session-ip-binding` | Auditoría de fijación de sesión y vinculación de IP de cliente |
+| `bug-bounty-deepfake-ai-spoofing` | Evaluación de riesgos en verificación biométrica (KYC) y AI Deepfakes |
+| `bug-bounty-ctf-binary-exploitation` | Fundamentos de análisis de binarios y protecciones (NX/ASLR/Stack Canaries) |
+| `bug-bounty-anomaly-login-blocking` | Evaluación de mecanismos de detección de anomalías y bloqueo de inicios de sesión |
 
 ---
 
@@ -250,3 +260,4 @@ Basado en los repositorios de ciberseguridad:
 - `kathanp19/JSFScan.sh`
 - `defparam/smuggler`
 - `PortSwigger/turbo-intruder`
+- `riteshekbote/bug-bounty`
