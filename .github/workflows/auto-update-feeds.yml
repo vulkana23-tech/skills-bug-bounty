@@ -1,0 +1,33 @@
+name: Auto-Update CISA KEV & Security Feeds Weekly
+
+on:
+  schedule:
+    # Run every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  update-feeds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch Latest CISA KEV Feed & Update Profiles
+        run: python3 scripts/fetch_cisa_kev.py
+
+      - name: Validate Generated JSON Syntax
+        run: python3 -m json.tool profiles/wild-exploits.json > /dev/null
+
+      - name: Commit and Push Updated Feeds
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add profiles/wild-exploits.json
+          git diff-index --quiet HEAD || git commit -m "Auto-Update: Synced latest CISA Known Exploited Vulnerabilities catalog [cron]"
+          git push

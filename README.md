@@ -1,6 +1,7 @@
 # Bug Bounty & Security Agent Skills Collection (100 Skills Milestone)
 
 [![CI/CD Validation](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml)
+[![Auto-Update CISA KEV](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml)
 [![Skills Count](https://img.shields.io/badge/Skills-100%20Skills-brightgreen.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![MCP Ready](https://img.shields.io/badge/MCP-Enabled-purple.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![OpenCode Ready](https://img.shields.io/badge/OpenCode-Compatible-blue.svg)](https://opencode.ai)
@@ -8,7 +9,7 @@
 
 A comprehensive, curated collection of **100 Agent Skills** for **OpenCode**, **Claude Code**, **Antigravity**, **Cursor**, and **RAG-enabled AI Assistants**. 
 
-Now featuring **Model Context Protocol (MCP)** tool call mappings, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
+Featuring **Model Context Protocol (MCP)** tool call mappings, **CISA Known Exploited Vulnerabilities (KEV)** dynamic feeds, **Few-Shot Learning Real-World Write-ups**, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
 
 ---
 
@@ -25,6 +26,22 @@ curl -sSL https://raw.githubusercontent.com/vulkana23-tech/skills-bug-bounty/mai
 ```powershell
 iwr -useb https://raw.githubusercontent.com/vulkana23-tech/skills-bug-bounty/main/install.ps1 | iex
 ```
+
+---
+
+## 📚 Real-World Write-ups & Few-Shot Studies (`knowledge/writeups/`)
+
+Enable your AI Agent to replicate high-bounty attack chains using real-world case studies:
+- **Uber OAuth Takeover**: [`knowledge/writeups/uber-oauth-account-takeover-chain.md`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/knowledge/writeups/uber-oauth-account-takeover-chain.md)
+- **Shopify GraphQL BFLA/IDOR**: [`knowledge/writeups/shopify-graphql-idor-bfla.md`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/knowledge/writeups/shopify-graphql-idor-bfla.md)
+- **AWS Cloud IMDSv2 SSRF Pivot**: [`knowledge/writeups/aws-imdsv2-ssrf-cloud-pivot.md`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/knowledge/writeups/aws-imdsv2-ssrf-cloud-pivot.md)
+
+---
+
+## ⚡ Dynamic CISA KEV Exploits Feed (`profiles/wild-exploits.json`)
+
+Automatically updated every week via GitHub Actions (`scripts/fetch_cisa_kev.py`):
+- Tracks top actively exploited vulnerabilities in the wild (Ivanti RCE, Citrix Bleed, ScreenConnect Auth Bypass, Confluence Admin Creation).
 
 ---
 
@@ -52,25 +69,16 @@ Connect your AI Agent to local CLI tools (`subfinder`, `nmap`, `httpx`, `nuclei`
 
 ---
 
-## 🚀 Two Flexible Integration Modes
+## 🚀 Integration Profiles
 
-### Option A: Dynamic Lightweight Profiles (Anti-Prompt Saturation)
-
-| Profile | Manifest Path | Skills | CLI Tools |
-| :--- | :--- | :---: | :--- |
-| **🔍 Recon & OSINT** | [`profiles/profile-recon-osint.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-recon-osint.json) | 25 | `subfinder`, `amass`, `httpx`, `naabu`, `spiderfoot` |
-| **🌐 Web & API Audit** | [`profiles/profile-web-api-audit.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-web-api-audit.json) | 30 | `ffuf`, `arjun`, `linkfinder`, `secretfinder`, `jwt_tool` |
-| **☁️ Cloud & DevOps** | [`profiles/profile-cloud-devops.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-cloud-devops.json) | 15 | `nuclei`, `s3scanner`, `cloudfox`, `checkov`, `docker` |
-| **🔥 Advanced Exploitation** | [`profiles/profile-advanced-exploitation.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-advanced-exploitation.json) | 19 | `smuggler.py`, `turbo-intruder`, `sqlmap`, `bchecks` |
-| **📱 Mobile, IoT & Binary** | [`profiles/profile-mobile-iot-binary.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-mobile-iot-binary.json) | 11 | `frida`, `apktool`, `binwalk`, `checksec`, `gdb` |
-
----
-
-### Option B: Persistent Knowledge & RAG Integration (`rag/`)
-
-1. **🤖 Ready-to-Use System Prompt**: [`rag/system-prompt-master.md`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/rag/system-prompt-master.md)
-2. **📄 Single-File Compendium**: [`rag/full-bug-bounty-knowledge-base.md`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/rag/full-bug-bounty-knowledge-base.md)
-3. **📊 Vector DB Datasets**: [`rag/chunks/`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/rag/chunks)
+| Profile | Manifest Path | Focus Area |
+| :--- | :--- | :--- |
+| **🔍 Recon & OSINT** | [`profiles/profile-recon-osint.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-recon-osint.json) | Subdomain discovery, ASNs, CT logs, Dorks, SpiderFoot, Amass |
+| **🌐 Web & API Audit** | [`profiles/profile-web-api-audit.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-web-api-audit.json) | XSS, SQLi, IDOR, GraphQL, JWT, JS Recon, SSRF, CORS |
+| **☁️ Cloud & DevOps** | [`profiles/profile-cloud-devops.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-cloud-devops.json) | AWS S3, Docker, Kubernetes RBAC, IAM, Nuclei fast scans |
+| **🔥 Advanced Exploitation** | [`profiles/profile-advanced-exploitation.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-advanced-exploitation.json) | Request Smuggling, Turbo Intruder, BChecks, Race Conditions |
+| **📱 Mobile, IoT & Binary** | [`profiles/profile-mobile-iot-binary.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-mobile-iot-binary.json) | Android/iOS, IoT Firmware (Binwalk), ELF/PE Binaries, KYC Deepfakes |
+| **⚡ Wild Exploits** | [`profiles/wild-exploits.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/wild-exploits.json) | Actively exploited CISA KEV catalog vulnerabilities |
 
 ---
 
@@ -80,14 +88,22 @@ Connect your AI Agent to local CLI tools (`subfinder`, `nmap`, `httpx`, `nuclei`
 bug-bounty-skills/
 ├── README.md                           # Master documentation & selection guide
 ├── skills.json                         # Master Manifest (100 skills)
-├── agent.py                            # Interactive workflow orchestrator CLI
+├── agent.py                            # 🤖 Workflow Orchestrator CLI
 ├── install.sh                          # One-line Linux/macOS installer
 ├── install.ps1                         # One-line Windows PowerShell installer
-├── mcp/                                # 🛠️ Model Context Protocol (MCP) configs
-├── payloads/                           # 💣 XSS and SQLi polyglot payload lists
+├── .github/workflows/validate.yml      # CI/CD integrity & JSON validation workflow
+├── .github/workflows/auto-update-feeds.yml# 🔄 Weekly CISA KEV feed auto-update [NUEVO]
+├── scripts/
+│   └── fetch_cisa_kev.py               # ⚡ Python CISA KEV feed fetcher [NUEVO]
+├── knowledge/writeups/                 # 📚 Real-world case studies for few-shot learning [NUEVO]
+│   ├── uber-oauth-account-takeover-chain.md
+│   ├── shopify-graphql-idor-bfla.md
+│   └── aws-imdsv2-ssrf-cloud-pivot.md
+├── mcp/                                # 🛠️ MCP Configuration & Tool Mappings
+├── payloads/                           # 💣 XSS and SQLi polyglots
 ├── wordlists/                          # 📝 API routes and subdomain dictionaries
 ├── templates/                          # 📋 HackerOne and Bugcrowd report templates
-├── profiles/                           # 🚀 Dynamic Lightweight Profiles with tool mappings
+├── profiles/                           # 🚀 Dynamic Lightweight Profiles (including wild-exploits.json)
 ├── rag/                                # 🧠 Persistent Knowledge & RAG Datasets
 └── skills/                             # 100 Modular skills (SKILL.md + references/)
 ```
