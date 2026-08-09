@@ -1,6 +1,6 @@
 # Bug Bounty & Security Skills Collection for OpenCode & Claude Code
 
-Colección completa y estructurada de **65 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates` y `aboul3la/Sublist3r`).
+Colección completa y estructurada de **70 Agent Skills** diseñadas para **OpenCode**, **Claude Code** y asistentes basados en agentes de IA (como Antigravity y Cursor). Esta suite integra las mejores fuentes y repositorios de ciberseguridad de la comunidad (`ngalongc/bug-bounty-reference`, `awesome-bug-bounty`, `reddelexc/hackerone-reports`, `swisskyrepo/PayloadsAllTheThings`, `EdOverflow/bugbounty-cheatsheet`, `vitalysim/Awesome-Hacking-Resources`, `nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters`, `The-Art-of-Hacking/h4cker`, `Bug-Bounty-Hunting-Methodology-2025`, `hackThacker/Bug-Bounty-Tools`, `projectdiscovery/nuclei-templates`, `aboul3la/Sublist3r` y `owasp-amass/amass`).
 
 ---
 
@@ -9,7 +9,7 @@ Colección completa y estructurada de **65 Agent Skills** diseñadas para **Open
 ```
 bug-bounty-skills/
 ├── README.md                           # Guía principal de uso e integración
-├── skills.json                         # Registro de 65 skills para importación automática
+├── skills.json                         # Registro de 70 skills para importación automática
 └── skills/
     ├── bug-bounty-recon/               # Reconocimiento, trazado de superficie y discovery
     ├── bug-bounty-xss/                 # Cross-Site Scripting (XSS, XSSI, DOM, HTMLi)
@@ -37,7 +37,7 @@ bug-bounty-skills/
     ├── bug-bounty-html-injection/      # HTML Injection, Dangling Markup & Content Spoofing
     ├── bug-bounty-rate-limit-bypass/   # Evasión de Limitación de Tasa (Rate Limiting) & IP Headers
     ├── bug-bounty-crlf-injection/      # CRLF Injection & HTTP Response Splitting
-    ├── bug-bounty-csv-injection/       # CSV / Formula Injection & DDE Execution
+    ├── bug-bounty-csv-injection/       # CSV / Formula Injection en hojas de cálculo y ejecución DDE
     ├── bug-bounty-xslt-injection/      # XSLT Injection & XML Document Reading
     ├── bug-bounty-command-injection/   # OS Command Injection & Filter Bypasses
     ├── bug-bounty-content-injection/   # Content Injection & Text Spoofing
@@ -75,7 +75,12 @@ bug-bounty-skills/
     ├── bug-bounty-reverse-dns-mapping/ # Mapeo de Registros Reverse DNS (PTR) & Bloques CIDR
     ├── bug-bounty-search-engine-dorking/# Search Engine Dorking Avanzado (Google/Bing Dorks)
     ├── bug-bounty-cert-transparency-logs/# Análisis de Logs de Transparencia de Certificados (crt.sh)
-    └── bug-bounty-dns-stochastic-bruteforce/# Fuerza Bruta Estocástica & Permutación DNS
+    ├── bug-bounty-dns-stochastic-bruteforce/# Fuerza Bruta Estocástica & Permutación DNS
+    ├── bug-bounty-attack-surface-mapping/# Mapeo Integral de Superficie de Ataque Corporativa (OWASP Amass)
+    ├── bug-bounty-asn-infrastructure-recon/# Reconocimiento de ASNs, Rutas BGP & Rangos IP (Amass)
+    ├── bug-bounty-graph-database-analytics/# Análisis de Grafos de Relaciones de Infraestructura (Amass DB)
+    ├── bug-bounty-oam-asset-modeling/  # Modelado Estandarizado de Activos - Open Asset Model (OAM)
+    └── bug-bounty-active-dns-alterations/# Alteraciones Activas de Nombres de Dominio & Sondeo Dinámico
 ```
 
 ---
@@ -97,7 +102,7 @@ Para hacer que Claude Code reconozca estas habilidades global o localmente:
 - **A nivel global**: Copia las carpetas en el directorio global de configuración de Claude Code (ej. `~/.claude/skills/`).
 
 ### 3. En Antigravity / Agentic IDEs
-Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.gemini\config\skills.json` o en `.agents/json`):
+Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.gemini\config\skills.json` o en `.agents/skills.json`):
 
 ```json
 {
@@ -109,7 +114,7 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 
 ---
 
-## 💡 Catálogo Completo de Habilidades (65 Agent Skills)
+## 💡 Catálogo Completo de Habilidades (70 Agent Skills)
 
 | Skill Name | Descripción |
 | :--- | :--- |
@@ -178,6 +183,11 @@ Puedes añadir la ruta en tu archivo `skills.json` global (`C:\Users\<usuario>\.
 | `bug-bounty-search-engine-dorking` | Search Engine Dorking avanzado para exposición de paneles y datos |
 | `bug-bounty-cert-transparency-logs` | Análisis de logs de transparencia de certificados SSL/TLS (crt.sh) |
 | `bug-bounty-dns-stochastic-bruteforce` | Fuerza bruta estocástica y permutación de nombres DNS (puredns/subbrute) |
+| `bug-bounty-attack-surface-mapping` | Mapeo integral de superficie de ataque corporativa (OWASP Amass Intel/Enum) |
+| `bug-bounty-asn-infrastructure-recon` | Reconocimiento de ASNs, prefijos BGP y rangos de red IP de la organización |
+| `bug-bounty-graph-database-analytics` | Análisis de grafos de infraestructura con la base de datos de Amass (`amass db`) |
+| `bug-bounty-oam-asset-modeling` | Modelado estandarizado de activos con el Open Asset Model (OAM Schema) |
+| `bug-bounty-active-dns-alterations` | Alteraciones activas de nombres de dominio y sondeo dinámico con Amass |
 
 ---
 
@@ -195,3 +205,4 @@ Basado en los repositorios de ciberseguridad:
 - `hackThacker/Bug-Bounty-Tools`
 - `projectdiscovery/nuclei-templates`
 - `aboul3la/Sublist3r`
+- `owasp-amass/amass`
