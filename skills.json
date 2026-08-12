@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "bug-bounty-skills",
-  "version": "17.0.0",
-  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security, Smuggler HTTP Request Smuggling, PortSwigger Turbo Intruder, Ritesh Ekbote Bug Bounty Methodology, CyberTechAjju Bug Bounty Toolkit)",
+  "version": "19.0.0",
+  "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security, Smuggler HTTP Request Smuggling, PortSwigger Turbo Intruder, Ritesh Ekbote Bug Bounty Methodology, CyberTechAjju Bug Bounty Toolkit, Reverse-Skill Methodology Router, Claude-BugHunter Workflow Framework)",
   "entries": [
     { "path": "./skills/bug-bounty-recon" },
     { "path": "./skills/bug-bounty-xss" },
@@ -103,6 +103,15 @@
     { "path": "./skills/bug-bounty-403-401-bypasses" },
     { "path": "./skills/bug-bounty-vulnerability-chaining" },
     { "path": "./skills/bug-bounty-js-secret-crawling" },
-    { "path": "./skills/bug-bounty-waf-csp-evasions" }
+    { "path": "./skills/bug-bounty-waf-csp-evasions" },
+    { "path": "./skills/bug-bounty-android-apk-routing" },
+    { "path": "./skills/bug-bounty-js-reverse-deobfuscation" },
+    { "path": "./skills/bug-bounty-binary-ctf-routing" },
+    { "path": "./skills/bug-bounty-agent-obedience-scope" },
+    { "path": "./skills/bug-bounty-firmware-iot-routing" },
+    { "path": "./skills/bug-bounty-7-question-gate" },
+    { "path": "./skills/bug-bounty-enterprise-identity-matrix" },
+    { "path": "./skills/bug-bounty-burp-mcp-integration" },
+    { "path": "./skills/bug-bounty-engagement-scaffolding" }
   ]
 }

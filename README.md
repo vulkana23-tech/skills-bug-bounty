@@ -3,15 +3,16 @@
 [![CI/CD Validation](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/validate.yml)
 [![Security & Secret Scan](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/security-scan.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/security-scan.yml)
 [![Auto-Update CISA KEV](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml/badge.svg)](https://github.com/vulkana23-tech/skills-bug-bounty/actions/workflows/auto-update-feeds.yml)
-[![Skills Count](https://img.shields.io/badge/Skills-100%20Skills-brightgreen.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
+[![Skills Count](https://img.shields.io/badge/Skills-109%20Skills-brightgreen.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
+[![Version](https://img.shields.io/badge/Version-19.0.0-blue.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![Ethical Framing](https://img.shields.io/badge/Refusal%20Bypass-Ethical%20Framing-green.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![MCP Ready](https://img.shields.io/badge/MCP-Enabled-purple.svg)](https://github.com/vulkana23-tech/skills-bug-bounty)
 [![OpenCode Ready](https://img.shields.io/badge/OpenCode-Compatible-blue.svg)](https://opencode.ai)
 [![Claude Code Ready](https://img.shields.io/badge/Claude%20Code-Compatible-orange.svg)](https://claude.ai)
 
-A comprehensive, curated collection of **100 Agent Skills** for **OpenCode**, **Claude Code**, **Cline / Roo Code**, **Antigravity**, **Cursor**, and **RAG-enabled AI Assistants**. 
+A comprehensive, curated collection of **109 Agent Skills** for **OpenCode**, **Claude Code**, **Cline / Roo Code**, **Antigravity**, **Cursor**, and **RAG-enabled AI Assistants**. 
 
-Featuring **Ethical Framing & Refusal Prevention Rules (`.clinerules`, `.cursorrules`, `AGENTS.md`)**, **Automated GitHub CodeQL & Gitleaks Security Scans**, **Model Context Protocol (MCP)** tool call mappings, **CISA Known Exploited Vulnerabilities (KEV)** dynamic feeds, **Few-Shot Learning Real-World Write-ups**, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
+Featuring **7-Question Validation Gate (`bug-bounty-7-question-gate`)**, **Claude-BugHunter 5-Phase Workflow (`profile-claude-bughunter-workflow.json`)**, **Burp Suite MCP Integration**, **Reverse-Skill Methodology Router (`MASTER-ROUTING.md`)**, **Scope Compliance Contract (`scope.md`)**, **Tool Indexing Scripts (`scripts/refresh_tool_index.py`)**, **Engagement Scaffolding CLI (`scripts/scaffold_engagement.py`)**, **Ethical Framing & Refusal Prevention Rules (`.clinerules`, `.cursorrules`, `AGENTS.md`)**, **Automated GitHub CodeQL & Gitleaks Security Scans**, **Model Context Protocol (MCP)** tool call mappings, **CISA Known Exploited Vulnerabilities (KEV)** dynamic feeds, **Few-Shot Learning Real-World Write-ups**, **Payloads & Wordlists**, **Automated Vulnerability Reporting Templates**, and a **Workflow Orchestrator CLI (`agent.py`)**.
 
 ---
 
@@ -109,6 +110,8 @@ Connect your AI Agent to local CLI tools (`subfinder`, `nmap`, `httpx`, `nuclei`
 | **☁️ Cloud & DevOps** | [`profiles/profile-cloud-devops.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-cloud-devops.json) | AWS S3, Docker, Kubernetes RBAC, IAM, Nuclei fast scans |
 | **🔥 Advanced Exploitation** | [`profiles/profile-advanced-exploitation.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-advanced-exploitation.json) | Request Smuggling, Turbo Intruder, BChecks, Race Conditions |
 | **📱 Mobile, IoT & Binary** | [`profiles/profile-mobile-iot-binary.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-mobile-iot-binary.json) | Android/iOS, IoT Firmware (Binwalk), ELF/PE Binaries, KYC Deepfakes |
+| **🔄 Reverse-Skill Router** | [`profiles/profile-reverse-skill-routing.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-reverse-skill-routing.json) | APK JADX/Frida, JS AST Deobfuscation, Binary CTF, Scope Obedience, Firmware |
+| **🏹 BugHunter Workflow** | [`profiles/profile-claude-bughunter-workflow.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/profile-claude-bughunter-workflow.json) | 7-Question Gate, Enterprise Identity Matrix, Burp MCP, Scaffolding |
 | **⚡ Wild Exploits** | [`profiles/wild-exploits.json`](file:///C:/Users/logir/.gemini/antigravity-ide/scratch/bug-bounty-skills/profiles/wild-exploits.json) | Actively exploited CISA KEV catalog vulnerabilities |
 
 ---

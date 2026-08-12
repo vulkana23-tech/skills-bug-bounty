@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "bug-bounty-skills-reverse-routing",
+  "version": "1.0.0",
+  "description": "Reverse-Skill Methodology Profile: Reverse Engineering, JS Deobfuscation, APK Triage, Binary CTF & Agent Scope Obedience (5 Skills)",
+  "tools": ["jadx", "frida", "apktool", "ghidra", "radare2", "gdb", "binwalk", "checksec"],
+  "entries": [
+    { "path": "../skills/bug-bounty-android-apk-routing" },
+    { "path": "../skills/bug-bounty-js-reverse-deobfuscation" },
+    { "path": "../skills/bug-bounty-binary-ctf-routing" },
+    { "path": "../skills/bug-bounty-agent-obedience-scope" },
+    { "path": "../skills/bug-bounty-firmware-iot-routing" }
+  ]
+}

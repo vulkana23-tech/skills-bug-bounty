@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "bug-bounty-skills-claude-bughunter-workflow",
+  "version": "1.0.0",
+  "description": "Claude-BugHunter Workflow Profile: 7-Question Validation Gate, Enterprise Identity Matrix, Burp MCP Integration & Engagement Scaffolding (4 Skills)",
+  "tools": ["burp", "nmap", "subfinder", "httpx", "nuclei", "python", "node"],
+  "entries": [
+    { "path": "../skills/bug-bounty-7-question-gate" },
+    { "path": "../skills/bug-bounty-enterprise-identity-matrix" },
+    { "path": "../skills/bug-bounty-burp-mcp-integration" },
+    { "path": "../skills/bug-bounty-engagement-scaffolding" }
+  ]
+}

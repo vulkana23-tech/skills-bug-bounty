@@ -1,0 +1,83 @@
+﻿{
+    "tools":  {
+                  "radare2":  {
+                                  "installed":  false,
+                                  "path":  null
+                              },
+                  "r2":  {
+                             "installed":  false,
+                             "path":  null
+                         },
+                  "binwalk":  {
+                                  "installed":  false,
+                                  "path":  null
+                              },
+                  "jadx":  {
+                               "installed":  false,
+                               "path":  null
+                           },
+                  "sqlmap":  {
+                                 "installed":  false,
+                                 "path":  null
+                             },
+                  "node":  {
+                               "installed":  true,
+                               "path":  "C:\\Program Files\\nodejs\\node.exe"
+                           },
+                  "nmap":  {
+                               "installed":  false,
+                               "path":  null
+                           },
+                  "objection":  {
+                                    "installed":  false,
+                                    "path":  null
+                                },
+                  "python":  {
+                                 "installed":  true,
+                                 "path":  "C:\\Users\\logir\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+                             },
+                  "amass":  {
+                                "installed":  false,
+                                "path":  null
+                            },
+                  "frida":  {
+                                "installed":  false,
+                                "path":  null
+                            },
+                  "gdb":  {
+                              "installed":  false,
+                              "path":  null
+                          },
+                  "nuclei":  {
+                                 "installed":  false,
+                                 "path":  null
+                             },
+                  "subfinder":  {
+                                    "installed":  false,
+                                    "path":  null
+                                },
+                  "ghidra":  {
+                                 "installed":  false,
+                                 "path":  null
+                             },
+                  "httpx":  {
+                                "installed":  false,
+                                "path":  null
+                            },
+                  "ffuf":  {
+                               "installed":  false,
+                               "path":  null
+                           },
+                  "checksec":  {
+                                   "installed":  false,
+                                   "path":  null
+                               },
+                  "apktool":  {
+                                  "installed":  false,
+                                  "path":  null
+                              }
+              },
+    "timestamp":  "2026-08-12T22:56:01Z",
+    "installed_count":  2,
+    "system":  "win32"
+}

@@ -1,6 +1,6 @@
-# Master Bug Bounty & Security Knowledge Base Compendium (100 Agent Skills)
+# Master Bug Bounty & Security Knowledge Base Compendium (109 Agent Skills)
 
-Este documento es una base de conocimiento consolidada que agrupa la metodología técnica, patrones de prueba y guías de remediación de las **100 Agent Skills de Ciberseguridad**. Está optimizado para **RAG (Retrieval-Augmented Generation)**, bases de datos vectoriales (ChromaDB, Pinecone, Qdrant) y lectura de contexto persistente en asistentes de IA.
+Este documento es una base de conocimiento consolidada que agrupa la metodología técnica, patrones de prueba y guías de remediación de las **109 Agent Skills de Ciberseguridad**. Está optimizado para **RAG (Retrieval-Augmented Generation)**, bases de datos vectoriales (ChromaDB, Pinecone, Qdrant) y lectura de contexto persistente en asistentes de IA.
 
 ---
 
@@ -73,3 +73,24 @@ Este documento es una base de conocimiento consolidada que agrupa la metodologí
 ### Skill 93–100: Binary Protections & Defensive Controls
 - **Binary Hardening**: Verificación de protecciones de compilación en ejecutables ELF/PE (`NX`, `ASLR`, `PIE`, `Stack Canaries`).
 - **Anomaly Detection**: Implementación de rate limiting adaptativo por IP y monitoreo de comportamiento anormal en mecanismos de inicio de sesión.
+
+---
+
+## 📌 DOMINIO 6: INGENIERÍA INVERSA & ROUTER DE METODOLOGÍA (Skills 101–105)
+
+### Skill 101–105: Reverse Engineering & Agent Obedience Router (Reverse-Skill)
+- **Android APK Routing**: Descompilación estática con JADX, instrumentación dinámica con Frida, bypass de SSL Pinning y descompilación de librerías `.so`.
+- **JS AST Deobfuscation**: Desempaquetado Webpack, deofuscación AST a nivel de nodos Babel, evasión de anti-debugging y recuperación de firmas API/HMAC.
+- **Binary & CTF Triaging**: Auditoría de ejecutable ELF/PE/Mach-O/WASM/Go/Rust, descompilación con Ghidra/Radare2 y metodología de resolución de CTFs.
+- **Agent Obedience & Scope Enforcement**: Protocolos de auto-verificación empírica, refutación de falsas excusas y cumplimiento estricto del contrato `scope.md`.
+- **Firmware & IoT Reverse Engineering**: Extracción de imágenes de firmware con Binwalk, auditoría de sistemas de archivos SquashFS/JFFS2 y credenciales embebidas.
+
+---
+
+## 📌 DOMINIO 7: RED TEAM WORKFLOW, IDENTIDAD Y FILTRO DE CALIDAD (Skills 106–109)
+
+### Skill 106–109: Claude-BugHunter Red-Team Workflow & Quality Gates
+- **7-Question Validation Gate**: Puerta de calidad obligatoria de 7 preguntas previa a la entrega de reportes (Alcance 100%, impacto demostrable, PoC práctico en vivo, redacción de PII, causa raíz, puntuación CVSS exacta y remediación).
+- **Enterprise Infrastructure & Identity**: Auditoría de M365 / Entra ID (Azure AD), Okta/SAML, VMware vCenter y dispositivos de borde SSL-VPN (Ivanti, Fortinet, Citrix Bleed).
+- **Burp Suite MCP Integration**: Conexión nativa de agentes IA con la API REST y servidor MCP de Burp Suite para inspección de historial proxy, repetición HTTP y fuzzing.
+- **Engagement Scaffolding**: Inicialización y automatización de estructuras de directorio de engagement (`scans/`, `evidence/`, `poc/`, `notes.md`, `scope.md`, `report.md`).
