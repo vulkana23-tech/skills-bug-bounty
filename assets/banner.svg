@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#grid)"/>
+
+  <!-- Top & Bottom Accent Bars -->
+  <rect x="0" y="0" width="1200" height="5" fill="url(#accent)"/>
+  <rect x="0" y="315" width="1200" height="5" fill="url(#accent)"/>
+
+  <!-- Decorative Cyber Shield Icon -->
+  <g transform="translate(80, 65)">
+    <path d="M90 10 L170 45 L170 115 C170 165 135 205 90 225 C45 205 10 165 10 115 L10 45 Z" fill="rgba(16, 185, 129, 0.1)" stroke="url(#accent)" stroke-width="4" filter="url(#glow)"/>
+    <path d="M90 35 L145 60 L145 110 C145 148 120 178 90 193 C60 178 35 148 35 110 L35 60 Z" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="90" y="132" font-family="Consolas, monospace" font-size="44" font-weight="bold" fill="#10b981" text-anchor="middle">100</text>
+    <text x="90" y="155" font-family="Consolas, monospace" font-size="13" font-weight="bold" fill="#94a3b8" text-anchor="middle">SKILLS</text>
+  </g>
+
+  <!-- Main Title & Subtitle -->
+  <text x="300" y="105" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="800" fill="#f8fafc">
+    Bug Bounty &amp; Security Agent Skills
+  </text>
+  <text x="300" y="148" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="500" fill="#38bdf8">
+    Offensive &amp; Defensive Cybersecurity Suite for Autonomous AI Agents
+  </text>
+
+  <!-- Feature Pills -->
+  <g transform="translate(300, 180)" font-family="Consolas, monospace" font-size="14" font-weight="600">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="165" height="36" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1.5"/>
+    <text x="82.5" y="23" fill="#34d399" text-anchor="middle">⚡ 5 Phase Profiles</text>
+
+    <!-- Pill 2 -->
+    <rect x="180" y="0" width="165" height="36" rx="8" fill="rgba(6, 182, 212, 0.15)" stroke="#06b6d4" stroke-width="1.5"/>
+    <text x="262.5" y="23" fill="#22d3ee" text-anchor="middle">🛠️ MCP CLI Ready</text>
+
+    <!-- Pill 3 -->
+    <rect x="360" y="0" width="175" height="36" rx="8" fill="rgba(139, 92, 246, 0.15)" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="447.5" y="23" fill="#a78bfa" text-anchor="middle">🧠 RAG &amp; Vector DB</text>
+
+    <!-- Pill 4 -->
+    <rect x="550" y="0" width="165" height="36" rx="8" fill="rgba(245, 158, 11, 0.15)" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="632.5" y="23" fill="#fbbf24" text-anchor="middle">🔥 CISA KEV Feed</text>
+
+    <!-- Pill 5 -->
+    <rect x="730" y="0" width="150" height="36" rx="8" fill="rgba(236, 72, 153, 0.15)" stroke="#ec4899" stroke-width="1.5"/>
+    <text x="805" y="23" fill="#f472b6" text-anchor="middle">🛡️ Anti-Refusal</text>
+  </g>
+
+  <!-- Compatibility Footer -->
+  <text x="300" y="265" font-family="Consolas, monospace" font-size="14" fill="#94a3b8">
+    Compatible with: Claude Code • OpenCode • Cursor IDE • Cline / Roo Code • Antigravity • LangChain
+  </text>
+</svg>
