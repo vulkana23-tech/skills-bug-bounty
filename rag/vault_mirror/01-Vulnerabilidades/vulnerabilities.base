@@ -1,0 +1,57 @@
+# ==============================================================================
+# VULNERABILITIES & CTI BASE // OBSIDIAN BASES SPECIFICATION 1.0
+# ==============================================================================
+
+filters:
+  or:
+    - 'file.hasTag("cve")'
+    - 'file.hasTag("vulnerability")'
+    - 'file.hasTag("writeup")'
+    - 'file.folder.startsWith("01-Vulnerabilidades")'
+
+formulas:
+  urgency_score: 'if(in_cisa_kev == true, "CRITICAL KEV", if(epss > 0.6, "HIGH EPSS", "MONITOR"))'
+
+properties:
+  file.name:
+    displayName: "Identificador / CVE"
+  severity:
+    displayName: "Severidad"
+  cvss:
+    displayName: "CVSS v3/v4"
+  epss:
+    displayName: "EPSS %"
+  in_cisa_kev:
+    displayName: "CISA KEV"
+  formula.urgency_score:
+    displayName: "Triaje Táctico"
+  status:
+    displayName: "Estado"
+
+views:
+  - type: table
+    name: "Triaje CTI Completo"
+    order:
+      - file.name
+      - severity
+      - cvss
+      - epss
+      - in_cisa_kev
+      - formula.urgency_score
+      - status
+    summaries:
+      file.name: Count
+      cvss: Average
+      epss: Average
+
+  - type: cards
+    name: "Explotación Activa (KEV & High EPSS)"
+    filters:
+      or:
+        - 'in_cisa_kev == true'
+        - 'epss > 0.5'
+    order:
+      - file.name
+      - severity
+      - formula.urgency_score
+      - epss

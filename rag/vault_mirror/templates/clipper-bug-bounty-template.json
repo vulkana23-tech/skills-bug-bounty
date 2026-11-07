@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "Bug Bounty & CTI Writeup",
+  "behavior": "create",
+  "noteNameFormat": "{{title | safe_name}}",
+  "path": "01-Vulnerabilidades/writeups",
+  "noteContentFormat": "---\ntitle: \"{{title}}\"\ntags:\n  - writeup\n  - bug-bounty\n  - cti\nsource: \"{{url}}\"\nauthor: \"{{author}}\"\ndate: \"{{date}}\"\nstatus: Triage\n---\n\n# \ud83c\udfaf {{title}}\n\n> [!INTEL] **Fuente Original**: [{{title}}]({{url}})\n> **Autor**: {{author}} | **Fecha**: {{date}}\n\n## \ud83d\udcdd Resumen T\u00e1ctico\n{{description}}\n\n## \ud83d\udd0d Contenido del Hallazgo\n{{content}}\n\n---\n*Capturado con Obsidian Web Clipper Oficial e indexado para memoria de agentes.*\n",
+  "properties": [
+    {
+      "name": "title",
+      "value": "{{title}}",
+      "type": "text"
+    },
+    {
+      "name": "tags",
+      "value": "writeup, bug-bounty, cti",
+      "type": "multitext"
+    },
+    {
+      "name": "source",
+      "value": "{{url}}",
+      "type": "text"
+    },
+    {
+      "name": "date",
+      "value": "{{date}}",
+      "type": "date"
+    }
+  ],
+  "triggers": [
+    "hackerone.com",
+    "bugcrowd.com",
+    "portswigger.net",
+    "medium.com",
+    "infosecwriteups.com",
+    "github.com/advisories",
+    "cve.org",
+    "nvd.nist.gov"
+  ]
+}

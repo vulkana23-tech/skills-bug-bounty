@@ -1,0 +1,165 @@
+{
+  "nodes": [
+    {
+      "id": "da7fe8dc84645a95",
+      "type": "group",
+      "label": "\u26a1 CORE PLATFORM & AUTENTICACI\u00d3N (Tier 1)",
+      "x": -700,
+      "y": -350,
+      "width": 560,
+      "height": 1520,
+      "color": "5"
+    },
+    {
+      "id": "c6e7d5d7c6310e11",
+      "type": "text",
+      "text": "## \ud83c\udfaf slack.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[slack.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:slack.com`",
+      "x": -660,
+      "y": -310,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "efd4f8490225cd67",
+      "type": "text",
+      "text": "## \ud83c\udfaf slackb.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[slackb.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:slackb.com`",
+      "x": -660,
+      "y": -150,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "2cb59bafe594c89f",
+      "type": "text",
+      "text": "## \ud83c\udfaf app.slack.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[app.slack.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:app.slack.com`",
+      "x": -660,
+      "y": 10,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "2bdc78acc5d4357f",
+      "type": "text",
+      "text": "## \ud83c\udfaf slackatwork.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[slackatwork.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:slackatwork.com`",
+      "x": -660,
+      "y": 170,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "1f4aa177f78b8eb9",
+      "type": "text",
+      "text": "## \ud83c\udfaf slack-redir.net\n**Scope**: `In-Scope Verificado`\n**Triage**: [[slack-redir.net]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:slack-redir.net`",
+      "x": -660,
+      "y": 330,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "c9815b74d1d5708a",
+      "type": "text",
+      "text": "## \ud83c\udfaf slack-imgs.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[slack-imgs.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:slack-imgs.com`",
+      "x": -660,
+      "y": 490,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "4f8bff29bcddd125",
+      "type": "text",
+      "text": "## \ud83c\udfaf spaces.pm\n**Scope**: `In-Scope Verificado`\n**Triage**: [[spaces.pm]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:spaces.pm`",
+      "x": -660,
+      "y": 650,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "b28fe763c3e96192",
+      "type": "text",
+      "text": "## \ud83c\udfaf quip.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[quip.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:quip.com`",
+      "x": -660,
+      "y": 810,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "d9a8a23857f77d59",
+      "type": "text",
+      "text": "## \ud83c\udfaf slack-status.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[slack-status.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:slack-status.com`",
+      "x": -660,
+      "y": 970,
+      "width": 480,
+      "height": 130,
+      "color": "5"
+    },
+    {
+      "id": "683924e705afd149",
+      "type": "group",
+      "label": "\ud83d\udd25 APIS & SERVICIOS DE BACKEND (Tier 1)",
+      "x": 50,
+      "y": -350,
+      "width": 560,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "ec816aaf1851d3ab",
+      "type": "text",
+      "text": "## \ud83c\udfaf api.slack.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[api.slack.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:api.slack.com`",
+      "x": 90,
+      "y": -310,
+      "width": 480,
+      "height": 130,
+      "color": "1"
+    },
+    {
+      "id": "c7da32c0cc50b46e",
+      "type": "text",
+      "text": "## \ud83c\udfaf edgeapi.slack.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[edgeapi.slack.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:edgeapi.slack.com`",
+      "x": 90,
+      "y": -150,
+      "width": 480,
+      "height": 130,
+      "color": "1"
+    },
+    {
+      "id": "527fcd2c983e46bc",
+      "type": "group",
+      "label": "\ud83d\udfe3 INTEGRACIONES & COLABORACI\u00d3N (Tier 2)",
+      "x": 50,
+      "y": 200,
+      "width": 560,
+      "height": 240,
+      "color": "6"
+    },
+    {
+      "id": "5dec856b01732dfa",
+      "type": "text",
+      "text": "## \ud83c\udfaf www.quip.com\n**Scope**: `In-Scope Verificado`\n**Triage**: [[www.quip.com]]\n> [!TARGET]\n> Auditor\u00eda autorizada. Dorks: `site:www.quip.com`",
+      "x": 90,
+      "y": 240,
+      "width": 480,
+      "height": 130,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "f24cb2d2cefc3c7c",
+      "fromNode": "c6e7d5d7c6310e11",
+      "fromSide": "right",
+      "toNode": "ec816aaf1851d3ab",
+      "toSide": "left",
+      "label": "API Calls / Microservicios",
+      "toEnd": "arrow"
+    }
+  ]
+}

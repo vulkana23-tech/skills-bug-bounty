@@ -1,0 +1,47 @@
+# ==============================================================================
+# TARGETS & SCOPES BASE // OBSIDIAN BASES SPECIFICATION 1.0
+# ==============================================================================
+
+filters:
+  or:
+    - 'file.hasTag("scope")'
+    - 'file.hasTag("target")'
+    - 'file.folder.startsWith("04-Scopes")'
+
+properties:
+  file.name:
+    displayName: "Activo / Dominio"
+  program:
+    displayName: "Programa"
+  tier:
+    displayName: "Nivel de Criticidad"
+  status:
+    displayName: "Scope Status"
+  technologies:
+    displayName: "Tecnologías Detectadas"
+  bounty_eligible:
+    displayName: "Bounty Eligible"
+
+views:
+  - type: table
+    name: "Inventario de Superficie en Scope"
+    order:
+      - file.name
+      - program
+      - tier
+      - status
+      - bounty_eligible
+      - technologies
+    summaries:
+      file.name: Count
+
+  - type: cards
+    name: "Tier 1 - Superficie Crítica"
+    filters:
+      or:
+        - 'tier == "Tier 1"'
+        - 'tier == "Tier 1 Critical"'
+    order:
+      - file.name
+      - program
+      - technologies
