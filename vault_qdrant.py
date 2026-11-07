@@ -63,11 +63,11 @@ def get_qdrant_client(storage_path: Optional[Path] = None) -> qdrant_client.Qdra
     url = os.environ.get("QDRANT_URL")
     if url and storage_path is None:  # Modo servidor: varios agentes a la vez
         try:
-            c = qdrant_client.QdrantClient(url=url, api_key=os.environ.get("QDRANT_API_KEY") or None, timeout=2.0, check_compatibility=False)
-            c.get_collections()
-            return c
+            client = qdrant_client.QdrantClient(url=url, api_key=os.environ.get("QDRANT_API_KEY") or None, timeout=2.0)
+            client.get_collections()
+            return client
         except Exception:
-            pass
+            pass  # Fallback a local embebido si el servidor remoto/puerto no responde
     p = storage_path or DB_PATH
     p.mkdir(parents=True, exist_ok=True)
     return qdrant_client.QdrantClient(path=str(p))
