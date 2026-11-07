@@ -29,6 +29,12 @@
       "command": "bin/craft-anything-cli.exe",
       "args": ["mcp", "--deep"],
       "description": "Análisis de interfaces de usuario y componentes frontend"
+    },
+    "cve-mcp": {
+      "command": "integrations/cve-mcp-server/.venv/Scripts/python.exe",
+      "args": ["-m", "cve_mcp.server"],
+      "description": "Inteligencia de vulnerabilidades CVE (NVD, EPSS, CISA KEV, PoC detection y triaje unificado)"
     }
   }
 }
+
