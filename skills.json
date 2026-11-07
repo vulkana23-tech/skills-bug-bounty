@@ -4,127 +4,494 @@
   "version": "19.0.0",
   "description": "Comprehensive Bug Bounty & Security Reference Skills Collection (Awesome Bug Bounty, HackerOne Reports, PayloadsAllTheThings, EdOverflow Cheatsheet, Awesome-Hacking-Resources, NahamSec Resources, The Art of Hacking, Bug Bounty Methodology 2025, Bug Bounty Tools, ProjectDiscovery Nuclei Templates, Sublist3r OSINT, OWASP Amass ASM, SpiderFoot OSINT, JSFScan.sh JavaScript Security, Smuggler HTTP Request Smuggling, PortSwigger Turbo Intruder, Ritesh Ekbote Bug Bounty Methodology, CyberTechAjju Bug Bounty Toolkit, Reverse-Skill Methodology Router, Claude-BugHunter Workflow Framework)",
   "entries": [
-    { "path": "./skills/bug-bounty-recon" },
-    { "path": "./skills/bug-bounty-xss" },
-    { "path": "./skills/bug-bounty-sqli" },
-    { "path": "./skills/bug-bounty-ssrf" },
-    { "path": "./skills/bug-bounty-idor" },
-    { "path": "./skills/bug-bounty-oauth-token" },
-    { "path": "./skills/bug-bounty-rce-deserial" },
-    { "path": "./skills/bug-bounty-csrf-logic" },
-    { "path": "./skills/bug-bounty-reporting" },
-    { "path": "./skills/bug-bounty-xxe" },
-    { "path": "./skills/bug-bounty-open-redirect" },
-    { "path": "./skills/bug-bounty-graphql" },
-    { "path": "./skills/bug-bounty-subdomain-takeover" },
-    { "path": "./skills/bug-bounty-account-takeover" },
-    { "path": "./skills/bug-bounty-ssti" },
-    { "path": "./skills/bug-bounty-lfi-rfi" },
-    { "path": "./skills/bug-bounty-jwt-security" },
-    { "path": "./skills/bug-bounty-file-upload" },
-    { "path": "./skills/bug-bounty-cve-exploits" },
-    { "path": "./skills/bug-bounty-cors" },
-    { "path": "./skills/bug-bounty-prototype-pollution" },
-    { "path": "./skills/bug-bounty-request-smuggling" },
-    { "path": "./skills/bug-bounty-websockets" },
-    { "path": "./skills/bug-bounty-html-injection" },
-    { "path": "./skills/bug-bounty-rate-limit-bypass" },
-    { "path": "./skills/bug-bounty-crlf-injection" },
-    { "path": "./skills/bug-bounty-csv-injection" },
-    { "path": "./skills/bug-bounty-xslt-injection" },
-    { "path": "./skills/bug-bounty-command-injection" },
-    { "path": "./skills/bug-bounty-content-injection" },
-    { "path": "./skills/bug-bounty-ai-redteaming" },
-    { "path": "./skills/bug-bounty-osint-threat-intel" },
-    { "path": "./skills/bug-bounty-mobile-assessment" },
-    { "path": "./skills/bug-bounty-reverse-engineering" },
-    { "path": "./skills/bug-bounty-privilege-escalation" },
-    { "path": "./skills/bug-bounty-target-selection" },
-    { "path": "./skills/bug-bounty-methodology-playbook" },
-    { "path": "./skills/bug-bounty-vulnerability-disclosure" },
-    { "path": "./skills/bug-bounty-environment-setup" },
-    { "path": "./skills/bug-bounty-information-disclosure" },
-    { "path": "./skills/bug-bounty-dfir-incident-response" },
-    { "path": "./skills/bug-bounty-cloud-security-audit" },
-    { "path": "./skills/bug-bounty-container-k8s-security" },
-    { "path": "./skills/bug-bounty-threat-hunting" },
-    { "path": "./skills/bug-bounty-api-security-top10" },
-    { "path": "./skills/bug-bounty-recon-pipeline-2025" },
-    { "path": "./skills/bug-bounty-port-service-discovery" },
-    { "path": "./skills/bug-bounty-parameter-mining" },
-    { "path": "./skills/bug-bounty-business-logic-2025" },
-    { "path": "./skills/bug-bounty-automation-scripts" },
-    { "path": "./skills/bug-bounty-cms-assessment" },
-    { "path": "./skills/bug-bounty-visual-recon" },
-    { "path": "./skills/bug-bounty-secret-leak-detection" },
-    { "path": "./skills/bug-bounty-cloud-s3-audit" },
-    { "path": "./skills/bug-bounty-web-fuzzing" },
-    { "path": "./skills/bug-bounty-nuclei-template-authoring" },
-    { "path": "./skills/bug-bounty-cve-fast-scanning" },
-    { "path": "./skills/bug-bounty-misconfig-detection" },
-    { "path": "./skills/bug-bounty-exposed-panels-detection" },
-    { "path": "./skills/bug-bounty-custom-protocol-scans" },
-    { "path": "./skills/bug-bounty-subdomain-osint-enum" },
-    { "path": "./skills/bug-bounty-reverse-dns-mapping" },
-    { "path": "./skills/bug-bounty-search-engine-dorking" },
-    { "path": "./skills/bug-bounty-cert-transparency-logs" },
-    { "path": "./skills/bug-bounty-dns-stochastic-bruteforce" },
-    { "path": "./skills/bug-bounty-attack-surface-mapping" },
-    { "path": "./skills/bug-bounty-asn-infrastructure-recon" },
-    { "path": "./skills/bug-bounty-graph-database-analytics" },
-    { "path": "./skills/bug-bounty-oam-asset-modeling" },
-    { "path": "./skills/bug-bounty-active-dns-alterations" },
-    { "path": "./skills/bug-bounty-osint-automation-framework" },
-    { "path": "./skills/bug-bounty-darkweb-leak-monitoring" },
-    { "path": "./skills/bug-bounty-entity-extraction-metadata" },
-    { "path": "./skills/bug-bounty-threat-intel-feeds" },
-    { "path": "./skills/bug-bounty-yaml-correlation-rules" },
-    { "path": "./skills/bug-bounty-js-file-collection" },
-    { "path": "./skills/bug-bounty-js-endpoint-extraction" },
-    { "path": "./skills/bug-bounty-js-secret-scanning" },
-    { "path": "./skills/bug-bounty-dom-xss-source-sink" },
-    { "path": "./skills/bug-bounty-js-custom-wordlists" },
-    { "path": "./skills/bug-bounty-http-desync-mutations" },
-    { "path": "./skills/bug-bounty-socket-poisoning-mitigation" },
-    { "path": "./skills/bug-bounty-single-packet-desync" },
-    { "path": "./skills/bug-bounty-h2-h1-downgrade-smuggling" },
-    { "path": "./skills/bug-bounty-smuggling-payload-bypasses" },
-    { "path": "./skills/bug-bounty-turbo-intruder-python-scripting" },
-    { "path": "./skills/bug-bounty-race-condition-single-packet-h2" },
-    { "path": "./skills/bug-bounty-custom-http-engine-tuning" },
-    { "path": "./skills/bug-bounty-response-diffing-filtering" },
-    { "path": "./skills/bug-bounty-mcp-ai-automated-fuzzing" },
-    { "path": "./skills/bug-bounty-iot-device-auditing" },
-    { "path": "./skills/bug-bounty-session-ip-binding" },
-    { "path": "./skills/bug-bounty-deepfake-ai-spoofing" },
-    { "path": "./skills/bug-bounty-ctf-binary-exploitation" },
-    { "path": "./skills/bug-bounty-anomaly-login-blocking" },
-    { "path": "./skills/bug-bounty-bchecks-automation" },
-    { "path": "./skills/bug-bounty-403-401-bypasses" },
-    { "path": "./skills/bug-bounty-vulnerability-chaining" },
-    { "path": "./skills/bug-bounty-js-secret-crawling" },
-    { "path": "./skills/bug-bounty-waf-csp-evasions" },
-    { "path": "./skills/bug-bounty-android-apk-routing" },
-    { "path": "./skills/bug-bounty-js-reverse-deobfuscation" },
-    { "path": "./skills/bug-bounty-binary-ctf-routing" },
-    { "path": "./skills/bug-bounty-agent-obedience-scope" },
-    { "path": "./skills/bug-bounty-firmware-iot-routing" },
-    { "path": "./skills/bug-bounty-7-question-gate" },
-    { "path": "./skills/bug-bounty-enterprise-identity-matrix" },
-    { "path": "./skills/bug-bounty-burp-mcp-integration" },
-    { "path": "./skills/bug-bounty-engagement-scaffolding" },
-    { "path": "./skills/security-audit" },
-    { "path": "./skills/scrapling" },
-    { "path": "./skills/obsidian-markdown" },
-    { "path": "./skills/obsidian-cli" },
-    { "path": "./skills/obsidian-bases" },
-    { "path": "./skills/json-canvas" },
-    { "path": "./skills/wiki-ingest" },
-    { "path": "./skills/wiki-query" },
-    { "path": "./skills/wiki-lint" },
-    { "path": "./skills/autoresearch" },
-    { "path": "./skills/understand" },
-    { "path": "./skills/understand-knowledge" },
-    { "path": "./skills/understand-dashboard" }
+    {
+      "path": "./skills/bug-bounty-recon"
+    },
+    {
+      "path": "./skills/bug-bounty-xss"
+    },
+    {
+      "path": "./skills/bug-bounty-sqli"
+    },
+    {
+      "path": "./skills/bug-bounty-ssrf"
+    },
+    {
+      "path": "./skills/bug-bounty-idor"
+    },
+    {
+      "path": "./skills/bug-bounty-oauth-token"
+    },
+    {
+      "path": "./skills/bug-bounty-rce-deserial"
+    },
+    {
+      "path": "./skills/bug-bounty-csrf-logic"
+    },
+    {
+      "path": "./skills/bug-bounty-reporting"
+    },
+    {
+      "path": "./skills/bug-bounty-xxe"
+    },
+    {
+      "path": "./skills/bug-bounty-open-redirect"
+    },
+    {
+      "path": "./skills/bug-bounty-graphql"
+    },
+    {
+      "path": "./skills/bug-bounty-subdomain-takeover"
+    },
+    {
+      "path": "./skills/bug-bounty-account-takeover"
+    },
+    {
+      "path": "./skills/bug-bounty-ssti"
+    },
+    {
+      "path": "./skills/bug-bounty-lfi-rfi"
+    },
+    {
+      "path": "./skills/bug-bounty-jwt-security"
+    },
+    {
+      "path": "./skills/bug-bounty-file-upload"
+    },
+    {
+      "path": "./skills/bug-bounty-cve-exploits"
+    },
+    {
+      "path": "./skills/bug-bounty-cors"
+    },
+    {
+      "path": "./skills/bug-bounty-prototype-pollution"
+    },
+    {
+      "path": "./skills/bug-bounty-request-smuggling"
+    },
+    {
+      "path": "./skills/bug-bounty-websockets"
+    },
+    {
+      "path": "./skills/bug-bounty-html-injection"
+    },
+    {
+      "path": "./skills/bug-bounty-rate-limit-bypass"
+    },
+    {
+      "path": "./skills/bug-bounty-crlf-injection"
+    },
+    {
+      "path": "./skills/bug-bounty-csv-injection"
+    },
+    {
+      "path": "./skills/bug-bounty-xslt-injection"
+    },
+    {
+      "path": "./skills/bug-bounty-command-injection"
+    },
+    {
+      "path": "./skills/bug-bounty-content-injection"
+    },
+    {
+      "path": "./skills/bug-bounty-ai-redteaming"
+    },
+    {
+      "path": "./skills/bug-bounty-osint-threat-intel"
+    },
+    {
+      "path": "./skills/bug-bounty-mobile-assessment"
+    },
+    {
+      "path": "./skills/bug-bounty-reverse-engineering"
+    },
+    {
+      "path": "./skills/bug-bounty-privilege-escalation"
+    },
+    {
+      "path": "./skills/bug-bounty-target-selection"
+    },
+    {
+      "path": "./skills/bug-bounty-methodology-playbook"
+    },
+    {
+      "path": "./skills/bug-bounty-vulnerability-disclosure"
+    },
+    {
+      "path": "./skills/bug-bounty-environment-setup"
+    },
+    {
+      "path": "./skills/bug-bounty-information-disclosure"
+    },
+    {
+      "path": "./skills/bug-bounty-dfir-incident-response"
+    },
+    {
+      "path": "./skills/bug-bounty-cloud-security-audit"
+    },
+    {
+      "path": "./skills/bug-bounty-container-k8s-security"
+    },
+    {
+      "path": "./skills/bug-bounty-threat-hunting"
+    },
+    {
+      "path": "./skills/bug-bounty-api-security-top10"
+    },
+    {
+      "path": "./skills/bug-bounty-recon-pipeline-2025"
+    },
+    {
+      "path": "./skills/bug-bounty-port-service-discovery"
+    },
+    {
+      "path": "./skills/bug-bounty-parameter-mining"
+    },
+    {
+      "path": "./skills/bug-bounty-business-logic-2025"
+    },
+    {
+      "path": "./skills/bug-bounty-automation-scripts"
+    },
+    {
+      "path": "./skills/bug-bounty-cms-assessment"
+    },
+    {
+      "path": "./skills/bug-bounty-visual-recon"
+    },
+    {
+      "path": "./skills/bug-bounty-secret-leak-detection"
+    },
+    {
+      "path": "./skills/bug-bounty-cloud-s3-audit"
+    },
+    {
+      "path": "./skills/bug-bounty-web-fuzzing"
+    },
+    {
+      "path": "./skills/bug-bounty-nuclei-template-authoring"
+    },
+    {
+      "path": "./skills/bug-bounty-cve-fast-scanning"
+    },
+    {
+      "path": "./skills/bug-bounty-misconfig-detection"
+    },
+    {
+      "path": "./skills/bug-bounty-exposed-panels-detection"
+    },
+    {
+      "path": "./skills/bug-bounty-custom-protocol-scans"
+    },
+    {
+      "path": "./skills/bug-bounty-subdomain-osint-enum"
+    },
+    {
+      "path": "./skills/bug-bounty-reverse-dns-mapping"
+    },
+    {
+      "path": "./skills/bug-bounty-search-engine-dorking"
+    },
+    {
+      "path": "./skills/bug-bounty-cert-transparency-logs"
+    },
+    {
+      "path": "./skills/bug-bounty-dns-stochastic-bruteforce"
+    },
+    {
+      "path": "./skills/bug-bounty-attack-surface-mapping"
+    },
+    {
+      "path": "./skills/bug-bounty-asn-infrastructure-recon"
+    },
+    {
+      "path": "./skills/bug-bounty-graph-database-analytics"
+    },
+    {
+      "path": "./skills/bug-bounty-oam-asset-modeling"
+    },
+    {
+      "path": "./skills/bug-bounty-active-dns-alterations"
+    },
+    {
+      "path": "./skills/bug-bounty-osint-automation-framework"
+    },
+    {
+      "path": "./skills/bug-bounty-darkweb-leak-monitoring"
+    },
+    {
+      "path": "./skills/bug-bounty-entity-extraction-metadata"
+    },
+    {
+      "path": "./skills/bug-bounty-threat-intel-feeds"
+    },
+    {
+      "path": "./skills/bug-bounty-yaml-correlation-rules"
+    },
+    {
+      "path": "./skills/bug-bounty-js-file-collection"
+    },
+    {
+      "path": "./skills/bug-bounty-js-endpoint-extraction"
+    },
+    {
+      "path": "./skills/bug-bounty-js-secret-scanning"
+    },
+    {
+      "path": "./skills/bug-bounty-dom-xss-source-sink"
+    },
+    {
+      "path": "./skills/bug-bounty-js-custom-wordlists"
+    },
+    {
+      "path": "./skills/bug-bounty-http-desync-mutations"
+    },
+    {
+      "path": "./skills/bug-bounty-socket-poisoning-mitigation"
+    },
+    {
+      "path": "./skills/bug-bounty-single-packet-desync"
+    },
+    {
+      "path": "./skills/bug-bounty-h2-h1-downgrade-smuggling"
+    },
+    {
+      "path": "./skills/bug-bounty-smuggling-payload-bypasses"
+    },
+    {
+      "path": "./skills/bug-bounty-turbo-intruder-python-scripting"
+    },
+    {
+      "path": "./skills/bug-bounty-race-condition-single-packet-h2"
+    },
+    {
+      "path": "./skills/bug-bounty-custom-http-engine-tuning"
+    },
+    {
+      "path": "./skills/bug-bounty-response-diffing-filtering"
+    },
+    {
+      "path": "./skills/bug-bounty-mcp-ai-automated-fuzzing"
+    },
+    {
+      "path": "./skills/bug-bounty-iot-device-auditing"
+    },
+    {
+      "path": "./skills/bug-bounty-session-ip-binding"
+    },
+    {
+      "path": "./skills/bug-bounty-deepfake-ai-spoofing"
+    },
+    {
+      "path": "./skills/bug-bounty-ctf-binary-exploitation"
+    },
+    {
+      "path": "./skills/bug-bounty-anomaly-login-blocking"
+    },
+    {
+      "path": "./skills/bug-bounty-bchecks-automation"
+    },
+    {
+      "path": "./skills/bug-bounty-403-401-bypasses"
+    },
+    {
+      "path": "./skills/bug-bounty-vulnerability-chaining"
+    },
+    {
+      "path": "./skills/bug-bounty-js-secret-crawling"
+    },
+    {
+      "path": "./skills/bug-bounty-waf-csp-evasions"
+    },
+    {
+      "path": "./skills/bug-bounty-android-apk-routing"
+    },
+    {
+      "path": "./skills/bug-bounty-js-reverse-deobfuscation"
+    },
+    {
+      "path": "./skills/bug-bounty-binary-ctf-routing"
+    },
+    {
+      "path": "./skills/bug-bounty-agent-obedience-scope"
+    },
+    {
+      "path": "./skills/bug-bounty-firmware-iot-routing"
+    },
+    {
+      "path": "./skills/bug-bounty-7-question-gate"
+    },
+    {
+      "path": "./skills/bug-bounty-enterprise-identity-matrix"
+    },
+    {
+      "path": "./skills/bug-bounty-burp-mcp-integration"
+    },
+    {
+      "path": "./skills/bug-bounty-engagement-scaffolding"
+    },
+    {
+      "path": "./skills/security-audit"
+    },
+    {
+      "path": "./skills/scrapling"
+    },
+    {
+      "path": "./skills/obsidian-markdown"
+    },
+    {
+      "path": "./skills/obsidian-cli"
+    },
+    {
+      "path": "./skills/obsidian-bases"
+    },
+    {
+      "path": "./skills/json-canvas"
+    },
+    {
+      "path": "./skills/wiki-ingest"
+    },
+    {
+      "path": "./skills/wiki-query"
+    },
+    {
+      "path": "./skills/wiki-lint"
+    },
+    {
+      "path": "./skills/autoresearch"
+    },
+    {
+      "path": "./skills/understand"
+    },
+    {
+      "path": "./skills/understand-knowledge"
+    },
+    {
+      "path": "./skills/understand-dashboard"
+    },
+    {
+      "path": "./skills/ares-redteam"
+    },
+    {
+      "path": "./skills/beacon-lens-create"
+    },
+    {
+      "path": "./skills/beacon-memory-distill"
+    },
+    {
+      "path": "./skills/beacon-memory-promote"
+    },
+    {
+      "path": "./skills/beacon-memory-recall"
+    },
+    {
+      "path": "./skills/beacon-session-handoff"
+    },
+    {
+      "path": "./skills/beacon-trace-share"
+    },
+    {
+      "path": "./skills/craft-anything"
+    },
+    {
+      "path": "./skills/defuddle"
+    },
+    {
+      "path": "./skills/google-cloud-api-gateway-security"
+    },
+    {
+      "path": "./skills/google-cloud-auth-verification"
+    },
+    {
+      "path": "./skills/google-cloud-gke-security-audit"
+    },
+    {
+      "path": "./skills/google-cloud-iam-policy-audit"
+    },
+    {
+      "path": "./skills/google-cloud-iam-policy-simulator"
+    },
+    {
+      "path": "./skills/google-cloud-iam-privilege-escalation"
+    },
+    {
+      "path": "./skills/google-cloud-iam-troubleshooting"
+    },
+    {
+      "path": "./skills/google-cloud-secops-incident-investigate"
+    },
+    {
+      "path": "./skills/google-cloud-secops-threat-hunt"
+    },
+    {
+      "path": "./skills/google-cloud-storage-bucket-audit"
+    },
+    {
+      "path": "./skills/google-cloud-storage-hardening"
+    },
+    {
+      "path": "./skills/google-cloud-waf-cloud-armor"
+    },
+    {
+      "path": "./skills/graphify"
+    },
+    {
+      "path": "./skills/knap"
+    },
+    {
+      "path": "./skills/monomi-recon"
+    },
+    {
+      "path": "./skills/nvidia-ontology-management"
+    },
+    {
+      "path": "./skills/nvidia-ontology-query"
+    },
+    {
+      "path": "./skills/nvidia-ontology-setup"
+    },
+    {
+      "path": "./skills/obsidian-vault-search"
+    },
+    {
+      "path": "./skills/opencheck-intelligence"
+    },
+    {
+      "path": "./skills/understand-chat"
+    },
+    {
+      "path": "./skills/understand-diff"
+    },
+    {
+      "path": "./skills/understand-domain"
+    },
+    {
+      "path": "./skills/understand-explain"
+    },
+    {
+      "path": "./skills/understand-figma"
+    },
+    {
+      "path": "./skills/understand-onboard"
+    },
+    {
+      "path": "./skills/vigilantes-cti"
+    },
+    {
+      "path": "./skills/wiki"
+    },
+    {
+      "path": "./skills/wiki-cli"
+    },
+    {
+      "path": "./skills/wiki-fold"
+    },
+    {
+      "path": "./skills/wiki-mode"
+    },
+    {
+      "path": "./skills/wiki-retrieve"
+    }
   ]
 }
