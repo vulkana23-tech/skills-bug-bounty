@@ -1,0 +1,11 @@
+---
+description: Orquestación del War Room multi-agente en LobeHub para Bug Bounty
+globs: **/lobehub/**, **/warroom/**
+alwaysApply: false
+---
+
+# LobeHub Multi-Agent War Room Rule
+
+- Despliega la sala de guerra con `docker compose -f integrations/lobehub/docker-compose.yml up -d` en `http://localhost:3210`.
+- Utiliza la cuadrilla de 3 agentes: Centinela de Triage (`1-triager-sentinel.json`), Auditor Ético (`2-bounty-auditor.json`) y Validador 7-Gate (`3-report-validator-7gate.json`).
+- Asegura la conectividad MCP con `obsidian-qdrant` y `auto-ontology` siguiendo `integrations/lobehub/lobehub_mcp_config.json`.

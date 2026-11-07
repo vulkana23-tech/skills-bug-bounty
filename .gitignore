@@ -1,30 +1,31 @@
-# Virtual environments & Caches
-.venv/
+# Python & Bytecode
 __pycache__/
 *.py[cod]
-*.class
+*$py.class
+*.so
+.venv/
+*/.venv/
+venv/
+*/venv/
+
+# Large Binaries & Executables
+bin/*.exe
+*.exe
+*.dll
+*.pyd
+*.7z
+*.zip
+*.tar.gz
+
+# Local Databases, Caches & Logs
+rag/qdrant_db/
+rag/vigilante.log
 *.log
-*.tmp
 _backup_*/
 scratch/
+vulnclaw-output/
 
-# Node modules
-node_modules/
-
-# Heavy Executables (Store locally in bin/)
-bin/*.exe
-bin/craft-anything
-bin/release_bin
-
-# Databases & local mirrors
-rag/qdrant_db/
-rag/vault_mirror/
-rag/pentesting-everything/
-rag/awesome-vehicle-security/
-rag/offseccyber/
-rag/vulnerability-notes/
-rag/vigilante.log
-
-# Cloned third-party integrations (tracked in their respective repos)
-integrations/
-*.bak*
+# Backups & Temporary Files
+*.bak
+*.bak-*
+.cursor/mcp.json.bak*

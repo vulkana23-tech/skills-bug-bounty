@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "obsidian-qdrant": {
+      "type": "sse",
+      "url": "http://127.0.0.1:8765/mcp",
+      "description": "Memoria vectorial y acceso a la bóveda de Obsidian Cyber-Vault"
+    },
+    "auto-ontology": {
+      "type": "sse",
+      "url": "http://127.0.0.1:3003",
+      "description": "Capa semántica empresarial NVIDIA Auto-Ontology para mapeo de entidades y BOLA"
+    },
+    "ares": {
+      "command": "python",
+      "args": ["-m", "ares.mcp"],
+      "description": "Auditoría defensiva ética y cortafuegos de alcance ScopeFirewall"
+    },
+    "opencheck": {
+      "command": "python",
+      "args": ["integrations/opencheck/mcp_server.py"],
+      "description": "Inteligencia corporativa, beneficiarios finales (UBO), subsidiarias y AML"
+    },
+    "rea": {
+      "command": "npx",
+      "args": ["rea-agents@latest", "mcp"],
+      "description": "Meta-harness de Ingeniería Inversa y análisis de código/binarios"
+    },
+    "craft-anything": {
+      "command": "bin/craft-anything-cli.exe",
+      "args": ["mcp", "--deep"],
+      "description": "Análisis de interfaces de usuario y componentes frontend"
+    }
+  }
+}

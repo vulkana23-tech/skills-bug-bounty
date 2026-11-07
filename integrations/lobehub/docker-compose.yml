@@ -1,0 +1,13 @@
+services:
+  lobehub:
+    image: lobehub/lobe-chat:latest
+    container_name: lobehub-bounty-warroom
+    restart: always
+    ports:
+      - "3210:3210"
+    environment:
+      - ACCESS_CODE=CyberWarRoom2026!
+      - APP_URL=http://localhost:3210
+      - ENABLE_METRICS=1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
