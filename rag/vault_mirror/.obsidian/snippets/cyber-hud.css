@@ -1,0 +1,112 @@
+/* ==========================================================================
+   CYBER-HUD // OBSIDIAN FUTURISTIC TACTICAL INTERFACE
+   ========================================================================== */
+
+:root {
+  --cyber-neon-cyan: #00f0ff;
+  --cyber-neon-magenta: #ff0055;
+  --cyber-neon-yellow: #ffea00;
+  --cyber-neon-green: #00ff66;
+  --cyber-neon-purple: #a855f7;
+  --cyber-bg-hud: rgba(13, 17, 23, 0.85);
+  --cyber-glow-cyan: 0 0 12px rgba(0, 240, 255, 0.35);
+  --cyber-glow-magenta: 0 0 12px rgba(255, 0, 85, 0.35);
+}
+
+/* --- Encabezados Futuristas --- */
+.markdown-rendered h1, .markdown-source-view.mod-cm6 .cm-header-1 {
+  color: var(--cyber-neon-cyan) !important;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.25);
+  border-bottom: 2px solid rgba(0, 240, 255, 0.4);
+  padding-bottom: 6px;
+  letter-spacing: 0.5px;
+}
+
+.markdown-rendered h2, .markdown-source-view.mod-cm6 .cm-header-2 {
+  color: #38bdf8 !important;
+  border-left: 3px solid var(--cyber-neon-cyan);
+  padding-left: 10px;
+}
+
+/* --- Wikilinks con Brillo Neón --- */
+.markdown-rendered .internal-link {
+  color: var(--cyber-neon-cyan) !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed rgba(0, 240, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.markdown-rendered .internal-link:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px var(--cyber-neon-cyan);
+  border-bottom: 1px solid var(--cyber-neon-cyan);
+}
+
+/* --- Tags como Chips Terminal --- */
+.markdown-rendered .tag, a.tag {
+  background: rgba(0, 240, 255, 0.08) !important;
+  color: var(--cyber-neon-cyan) !important;
+  border: 1px solid rgba(0, 240, 255, 0.35) !important;
+  border-radius: 4px !important;
+  padding: 2px 8px !important;
+  font-family: monospace !important;
+  font-size: 0.82em !important;
+  box-shadow: 0 0 5px rgba(0, 240, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.markdown-rendered .tag:hover, a.tag:hover {
+  background: rgba(0, 240, 255, 0.2) !important;
+  box-shadow: 0 0 10px var(--cyber-neon-cyan);
+}
+
+/* --- Bloques de Código Estilo Terminal --- */
+.markdown-rendered pre, .cm-embed-block {
+  border: 1px solid rgba(0, 240, 255, 0.25) !important;
+  border-radius: 6px !important;
+  background-color: #0b0f17 !important;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Callouts Tácticos Personalizados --- */
+.callout[data-callout="target"] {
+  --callout-color: 0, 240, 255;
+  --callout-icon: lucide-crosshair;
+  border-left: 4px solid var(--cyber-neon-cyan) !important;
+  background: linear-gradient(90deg, rgba(0, 240, 255, 0.08) 0%, rgba(13, 17, 23, 0.3) 100%) !important;
+  border-radius: 6px;
+  box-shadow: var(--cyber-glow-cyan);
+}
+
+.callout[data-callout="breach"] {
+  --callout-color: 255, 0, 85;
+  --callout-icon: lucide-shield-alert;
+  border-left: 4px solid var(--cyber-neon-magenta) !important;
+  background: linear-gradient(90deg, rgba(255, 0, 85, 0.09) 0%, rgba(13, 17, 23, 0.3) 100%) !important;
+  border-radius: 6px;
+  box-shadow: var(--cyber-glow-magenta);
+}
+
+.callout[data-callout="intel"] {
+  --callout-color: 255, 234, 0;
+  --callout-icon: lucide-radar;
+  border-left: 4px solid var(--cyber-neon-yellow) !important;
+  background: linear-gradient(90deg, rgba(255, 234, 0, 0.08) 0%, rgba(13, 17, 23, 0.3) 100%) !important;
+  border-radius: 6px;
+}
+
+.callout[data-callout="payload"] {
+  --callout-color: 0, 255, 102;
+  --callout-icon: lucide-terminal;
+  border-left: 4px solid var(--cyber-neon-green) !important;
+  background: linear-gradient(90deg, rgba(0, 255, 102, 0.08) 0%, rgba(13, 17, 23, 0.3) 100%) !important;
+  border-radius: 6px;
+}
+
+.callout[data-callout="recon"] {
+  --callout-color: 168, 85, 247;
+  --callout-icon: lucide-scan;
+  border-left: 4px solid var(--cyber-neon-purple) !important;
+  background: linear-gradient(90deg, rgba(168, 85, 247, 0.08) 0%, rgba(13, 17, 23, 0.3) 100%) !important;
+  border-radius: 6px;
+}

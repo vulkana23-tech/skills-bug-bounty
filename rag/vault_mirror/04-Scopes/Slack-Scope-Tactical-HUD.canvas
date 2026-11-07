@@ -1,0 +1,142 @@
+{
+  "nodes": [
+    {
+      "id": "02be1f040d6ad5fb",
+      "type": "group",
+      "label": "\u26a1 TIER 1 // SLACK CORE PLATFORM",
+      "x": -600,
+      "y": -350,
+      "width": 540,
+      "height": 450,
+      "color": "5"
+    },
+    {
+      "id": "da01fb5c2c611cd5",
+      "type": "text",
+      "text": "## \ud83c\udf10 slack.com\n**Tipo**: Web Principal & Auth\n**Scope**: `In-Scope (Bounty Eligible)`\n**Tecnolog\u00eda**: React, Nginx Edge, OAuth2\n> [!TARGET]\n> Punto de entrada para autenticaci\u00f3n SSO / Magic Link",
+      "x": -570,
+      "y": -280,
+      "width": 480,
+      "height": 160,
+      "color": "5"
+    },
+    {
+      "id": "cc265252f3b14430",
+      "type": "text",
+      "text": "## \ud83d\udcac app.slack.com\n**Tipo**: Cliente Web WebSocket / SPA\n**Scope**: `In-Scope (Tier 1)`\n**Vectores de Auditor\u00eda**:\n- WebSocket Handshake & CSWSH\n- PostMessage & Client Storage\n- CSP Nonce Evaluation",
+      "x": -570,
+      "y": -90,
+      "width": 480,
+      "height": 160,
+      "color": "5"
+    },
+    {
+      "id": "0c66f5b1b3b07871",
+      "type": "group",
+      "label": "\ud83d\udd25 TIER 1 // API & SERVICE MESH",
+      "x": 60,
+      "y": -350,
+      "width": 540,
+      "height": 450,
+      "color": "1"
+    },
+    {
+      "id": "7358c6e540ac09fe",
+      "type": "text",
+      "text": "## \ud83d\udee1\ufe0f api.slack.com\n**Tipo**: Developer Portal & REST API\n**Scope**: `In-Scope (Tier 1 Critical)`\n**Superficie de Ataque**:\n- BOLA / IDOR en endpoints `/api/*`\n- OAuth Redirect URI validation\n- Token Scope Privilege Escalation",
+      "x": 90,
+      "y": -280,
+      "width": 480,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "e208747c1ac8e20e",
+      "type": "text",
+      "text": "### \ud83e\uddea Reglas de Triage CTI & Herramientas\n- **ARES Scope**: Restringido a dominios verificados\n- **XSSRush**: Inspecci\u00f3n DOM en endpoints GET/POST\n- **CVE-MCP**: Correlaci\u00f3n en vivo de headers de servidor con NVD y CISA KEV",
+      "x": 90,
+      "y": -90,
+      "width": 480,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "id": "ff2f05e57b80c6dc",
+      "type": "group",
+      "label": "\ud83d\udef0\ufe0f TIER 2 // ASSET DELIVERY & REDIRECTS",
+      "x": -600,
+      "y": 180,
+      "width": 540,
+      "height": 340,
+      "color": "3"
+    },
+    {
+      "id": "513cd0e99b5e43ac",
+      "type": "text",
+      "text": "## \ud83d\uddbc\ufe0f slack-imgs.com & slack-redir.net\n**Tipo**: Image Proxy & Link Shim\n**Scope**: `In-Scope (Tier 2)`\n**Vectores Clave**:\n- Open Redirect en `slack-redir.net/link?url=...`\n- SSRF Blind en procesamiento de im\u00e1genes/previews\n- Content-Type Sniffing / SVG Stored XSS",
+      "x": -570,
+      "y": 250,
+      "width": 480,
+      "height": 220,
+      "color": "3"
+    },
+    {
+      "id": "99a7a9be3e62c8ff",
+      "type": "group",
+      "label": "\ud83d\udfe3 TIER 2 // COLLABORATION & DOCS",
+      "x": 60,
+      "y": 180,
+      "width": 540,
+      "height": 340,
+      "color": "6"
+    },
+    {
+      "id": "62224790c9ecb334",
+      "type": "text",
+      "text": "## \ud83d\udcdd quip.com & *.quip.com\n**Tipo**: Document Collaboration Suite (Salesforce)\n**Scope**: `In-Scope (Bounty Eligible)`\n**Superficie**:\n- Broken Object Authorization en documentos compartidos\n- Integraciones de chat y Webhooks bidireccionales\n- Inyecci\u00f3n de f\u00f3rmulas y exportaci\u00f3n CSV/PDF",
+      "x": 90,
+      "y": 250,
+      "width": 480,
+      "height": 220,
+      "color": "6"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e5f81e49acb5b53b",
+      "fromNode": "da01fb5c2c611cd5",
+      "fromSide": "bottom",
+      "toNode": "cc265252f3b14430",
+      "toSide": "top",
+      "label": "Session Handshake",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "30343b2c031422b4",
+      "fromNode": "7358c6e540ac09fe",
+      "fromSide": "bottom",
+      "toNode": "e208747c1ac8e20e",
+      "toSide": "top",
+      "label": "Inspecci\u00f3n Automatizada",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "692c9c05569da23e",
+      "fromNode": "cc265252f3b14430",
+      "fromSide": "right",
+      "toNode": "7358c6e540ac09fe",
+      "toSide": "left",
+      "label": "Token Bearer Calls",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "3ab6959963840aa8",
+      "fromNode": "cc265252f3b14430",
+      "fromSide": "bottom",
+      "toNode": "513cd0e99b5e43ac",
+      "toSide": "top",
+      "label": "External Link & Image Proxies",
+      "toEnd": "arrow"
+    }
+  ]
+}
