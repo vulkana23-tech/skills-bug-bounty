@@ -62,7 +62,12 @@ def get_embedding(text: str, model: str = EMBED_MODEL) -> List[float]:
 def get_qdrant_client(storage_path: Optional[Path] = None) -> qdrant_client.QdrantClient:
     url = os.environ.get("QDRANT_URL")
     if url and storage_path is None:  # Modo servidor: varios agentes a la vez
-        return qdrant_client.QdrantClient(url=url, api_key=os.environ.get("QDRANT_API_KEY") or None)
+        try:
+            c = qdrant_client.QdrantClient(url=url, api_key=os.environ.get("QDRANT_API_KEY") or None, timeout=2.0, check_compatibility=False)
+            c.get_collections()
+            return c
+        except Exception:
+            pass
     p = storage_path or DB_PATH
     p.mkdir(parents=True, exist_ok=True)
     return qdrant_client.QdrantClient(path=str(p))
