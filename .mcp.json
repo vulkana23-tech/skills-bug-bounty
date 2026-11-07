@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "obsidian-qdrant": {
+      "command": "C:\\Users\\logir\\Projects\\bug-bounty-skills\\rag\\pentesting-everything\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\logir\\Projects\\bug-bounty-skills\\vault_qdrant_mcp.py"
+      ]
+    },
+    "ares": {
+      "command": "C:\\Users\\logir\\Projects\\bug-bounty-skills\\rag\\pentesting-everything\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "ares.mcp"
+      ]
+    },
+    "craft-anything": {
+      "command": "C:\\Users\\logir\\Projects\\bug-bounty-skills\\bin\\craft-anything-cli.exe",
+      "args": [
+        "mcp",
+        "--deep"
+      ]
+    },
+    "auto-ontology": {
+      "command": "C:\\Users\\logir\\Projects\\bug-bounty-skills\\rag\\pentesting-everything\\.venv\\Scripts\\auto-ontology-mcp.exe",
+      "args": []
+    },
+    "opencheck": {
+      "command": "C:\\Users\\logir\\Projects\\bug-bounty-skills\\rag\\pentesting-everything\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\logir\\Projects\\bug-bounty-skills\\integrations\\opencheck\\mcp_server.py"
+      ]
+    },
+    "rea": {
+      "command": "npx",
+      "args": [
+        "rea-agents@latest",
+        "mcp"
+      ]
+    }
+  }
+}

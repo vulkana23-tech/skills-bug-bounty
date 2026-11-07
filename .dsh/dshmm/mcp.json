@@ -1,0 +1,52 @@
+{
+  "mcpServers": {
+    "obsidian-qdrant": {
+      "type": "stdio",
+      "command": "C:\\Users\\logir\\Projects\\vault-memory\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\logir\\Projects\\vault-memory\\vault_qdrant_mcp.py"
+      ],
+      "env": {
+        "NO_PROXY": "127.0.0.1,localhost",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    "rea": {
+      "type": "stdio",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "npx",
+        "rea-agents@latest",
+        "mcp"
+      ],
+      "env": {}
+    },
+    "craft-anything": {
+      "type": "stdio",
+      "command": "C:\\Users\\logir\\Projects\\bug-bounty-skills\\bin\\craft-anything-cli.exe",
+      "args": [
+        "mcp",
+        "--deep"
+      ],
+      "env": {}
+    },
+    "ares": {
+      "type": "stdio",
+      "command": "C:\\Users\\logir\\Projects\\vault-memory\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "ares.mcp"
+      ],
+      "env": {}
+    },
+    "opencheck": {
+      "type": "stdio",
+      "command": "C:\\Users\\logir\\Projects\\vault-memory\\.venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\logir\\Projects\\bug-bounty-skills\\integrations\\opencheck\\mcp_server.py"
+      ],
+      "env": {}
+    }
+  }
+}

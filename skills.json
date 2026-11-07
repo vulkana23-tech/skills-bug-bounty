@@ -112,6 +112,19 @@
     { "path": "./skills/bug-bounty-7-question-gate" },
     { "path": "./skills/bug-bounty-enterprise-identity-matrix" },
     { "path": "./skills/bug-bounty-burp-mcp-integration" },
-    { "path": "./skills/bug-bounty-engagement-scaffolding" }
+    { "path": "./skills/bug-bounty-engagement-scaffolding" },
+    { "path": "./skills/security-audit" },
+    { "path": "./skills/scrapling" },
+    { "path": "./skills/obsidian-markdown" },
+    { "path": "./skills/obsidian-cli" },
+    { "path": "./skills/obsidian-bases" },
+    { "path": "./skills/json-canvas" },
+    { "path": "./skills/wiki-ingest" },
+    { "path": "./skills/wiki-query" },
+    { "path": "./skills/wiki-lint" },
+    { "path": "./skills/autoresearch" },
+    { "path": "./skills/understand" },
+    { "path": "./skills/understand-knowledge" },
+    { "path": "./skills/understand-dashboard" }
   ]
 }

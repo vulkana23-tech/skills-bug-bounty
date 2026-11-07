@@ -20,6 +20,18 @@ Si utilizas **AnythingLLM**, **NotebookLM**, **Open WebUI** o **LangChain Docume
 Si estás construyendo un pipeline RAG en **Python (LangChain / LlamaIndex / ChromaDB / Qdrant / Pinecone)**:
 - Utiliza los datasets JSON en `rag/chunks/` que incluyen metadatos estructurados (`domain`, `skills`, `remediation`, `tags`).
 
+### 4. Dataset externo: PentestingEverything (`rag/pentesting-everything/`)
+Más de 5.000 chunks del repositorio [m14r41/PentestingEverything](https://github.com/m14r41/PentestingEverything) (24 dominios, Markdown + PDFs) en el mismo esquema, con metadatos de origen y licencia. Consulta [`rag/pentesting-everything/README.md`](pentesting-everything/README.md).
+
+### 5. Dataset automotriz: Awesome Vehicle Security (`rag/awesome-vehicle-security/`)
+Dataset estructurado del repositorio [jaredthecoder/awesome-vehicle-security](https://github.com/jaredthecoder/awesome-vehicle-security) (CAN bus, hardware, SDR, ECU, UDS, OBD-II, telemetría y explotación vehicular). Consulta [`rag/awesome-vehicle-security/README.md`](awesome-vehicle-security/README.md).
+
+### 6. Dataset técnico profundo: Vulnerability Notes (`rag/vulnerability-notes/`)
+Más de 7.000 chunks con 190 guías exhaustivas y notas de investigación del repositorio [parsamajidipour/vulnerability-notes](https://github.com/parsamajidipour/vulnerability-notes) sobre 10 vulnerabilidades web críticas (HTTP Request Smuggling, IDOR/BOLA, Web Cache Poisoning, OAuth/OIDC, SQLi, SSRF, SSTI, CSRF, Race Conditions, XXE). Consulta [`rag/vulnerability-notes/README.md`](vulnerability-notes/README.md).
+
+### 7. Dataset de entrenamiento ofensivo: OffsecCyber (`rag/offseccyber/`)
+Más de 12.400 pares instructivos y casos del dataset [PentesterFlow/OffsecCyber](https://huggingface.co/datasets/PentesterFlow/OffsecCyber) (PortSwigger Labs con soluciones paso a paso, reportes reales de HackerOne con root cause y severidad, tradecraft ofensivo de WAHH 2e, workarounds y CVE/NVD intelligence). Consulta [`rag/offseccyber/README.md`](offseccyber/README.md).
+
 ---
 
 ## 🐍 Ejemplo de Integración en Python (LangChain + ChromaDB)

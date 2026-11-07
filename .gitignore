@@ -1,0 +1,30 @@
+# Virtual environments & Caches
+.venv/
+__pycache__/
+*.py[cod]
+*.class
+*.log
+*.tmp
+_backup_*/
+scratch/
+
+# Node modules
+node_modules/
+
+# Heavy Executables (Store locally in bin/)
+bin/*.exe
+bin/craft-anything
+bin/release_bin
+
+# Databases & local mirrors
+rag/qdrant_db/
+rag/vault_mirror/
+rag/pentesting-everything/
+rag/awesome-vehicle-security/
+rag/offseccyber/
+rag/vulnerability-notes/
+rag/vigilante.log
+
+# Cloned third-party integrations (tracked in their respective repos)
+integrations/
+*.bak*
